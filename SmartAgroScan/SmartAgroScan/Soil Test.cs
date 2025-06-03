@@ -24,7 +24,7 @@ namespace SmartAgroScan
 
         private void btnTest_Click(object sender, EventArgs e)
         {
-
+            // Validate input fields
             if (txtN.Text == "" || txtP.Text == "" || txtK.Text == "" || txtPH.Text == "" || txtMoisture.Text == "")
             {
                 MessageBox.Show("Please fill in all fields.");
@@ -71,8 +71,8 @@ namespace SmartAgroScan
 
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             DataSet ds = new DataSet();
-            da.Fill(ds); // Fill the dataset with the results of the query
-            DataTable dt = ds.Tables[0]; // Get the first table from the DataSet
+            da.Fill(ds); 
+            DataTable dt = ds.Tables[0]; 
             if (dt.Rows.Count > 0)
             {
                 txtSoilCondition.Text = SoilCondition(ph);
