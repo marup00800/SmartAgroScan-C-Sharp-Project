@@ -72,3 +72,4 @@ F:\OneDrive - American International University-Bangladesh\Documents\Desktop\C# 
 F:\OneDrive - American International University-Bangladesh\Documents\Desktop\C# Project\Test Project\SmartAgroScan\SmartAgroScan\obj\Debug\net8.0-windows\SmartAgroScan.User_Registration.resources
 F:\OneDrive - American International University-Bangladesh\Documents\Desktop\C# Project\Test Project\SmartAgroScan\SmartAgroScan\obj\Debug\net8.0-windows\SmartAgroScan.Soil_Test.resources
 F:\OneDrive - American International University-Bangladesh\Documents\Desktop\C# Project\Test Project\SmartAgroScan\SmartAgroScan\obj\Debug\net8.0-windows\SmartAgroScan.Properties.Resources.resources
+F:\OneDrive - American International University-Bangladesh\Documents\Desktop\C# Project\Test Project\SmartAgroScan\SmartAgroScan\obj\Debug\net8.0-windows\SmartAgroScan.Admin_Dashboard.resources

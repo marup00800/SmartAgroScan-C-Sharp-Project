@@ -65,7 +65,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(169, 73);
+            label1.Location = new Point(64, 103);
             label1.Name = "label1";
             label1.Size = new Size(27, 20);
             label1.TabIndex = 0;
@@ -74,7 +74,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(172, 128);
+            label2.Location = new Point(67, 158);
             label2.Name = "label2";
             label2.Size = new Size(24, 20);
             label2.TabIndex = 1;
@@ -83,7 +83,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(171, 174);
+            label3.Location = new Point(66, 204);
             label3.Name = "label3";
             label3.Size = new Size(25, 20);
             label3.TabIndex = 2;
@@ -92,7 +92,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(160, 234);
+            label4.Location = new Point(55, 264);
             label4.Name = "label4";
             label4.Size = new Size(36, 20);
             label4.TabIndex = 3;
@@ -101,7 +101,7 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(122, 287);
+            label5.Location = new Point(17, 317);
             label5.Name = "label5";
             label5.Size = new Size(74, 20);
             label5.TabIndex = 4;
@@ -109,42 +109,42 @@
             // 
             // txtN
             // 
-            txtN.Location = new Point(202, 70);
+            txtN.Location = new Point(97, 100);
             txtN.Name = "txtN";
             txtN.Size = new Size(145, 27);
             txtN.TabIndex = 5;
             // 
             // txtP
             // 
-            txtP.Location = new Point(202, 121);
+            txtP.Location = new Point(97, 151);
             txtP.Name = "txtP";
             txtP.Size = new Size(145, 27);
             txtP.TabIndex = 6;
             // 
             // txtK
             // 
-            txtK.Location = new Point(202, 174);
+            txtK.Location = new Point(97, 204);
             txtK.Name = "txtK";
             txtK.Size = new Size(145, 27);
             txtK.TabIndex = 7;
             // 
             // txtPH
             // 
-            txtPH.Location = new Point(202, 227);
+            txtPH.Location = new Point(97, 257);
             txtPH.Name = "txtPH";
             txtPH.Size = new Size(145, 27);
             txtPH.TabIndex = 8;
             // 
             // txtMoisture
             // 
-            txtMoisture.Location = new Point(202, 280);
+            txtMoisture.Location = new Point(97, 310);
             txtMoisture.Name = "txtMoisture";
             txtMoisture.Size = new Size(145, 27);
             txtMoisture.TabIndex = 9;
             // 
             // btnBack
             // 
-            btnBack.Location = new Point(669, 595);
+            btnBack.Location = new Point(485, 598);
             btnBack.Name = "btnBack";
             btnBack.Size = new Size(105, 38);
             btnBack.TabIndex = 62;
@@ -154,7 +154,7 @@
             // 
             // btnTest
             // 
-            btnTest.Location = new Point(216, 330);
+            btnTest.Location = new Point(111, 360);
             btnTest.Name = "btnTest";
             btnTest.Size = new Size(105, 38);
             btnTest.TabIndex = 64;
@@ -165,7 +165,7 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(44, 46);
+            label6.Location = new Point(32, 9);
             label6.Name = "label6";
             label6.Size = new Size(110, 20);
             label6.TabIndex = 64;
@@ -175,7 +175,7 @@
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(44, 78);
+            label7.Location = new Point(32, 41);
             label7.Name = "label7";
             label7.Size = new Size(154, 20);
             label7.TabIndex = 65;
@@ -184,7 +184,7 @@
             // label8
             // 
             label8.AutoSize = true;
-            label8.Location = new Point(44, 143);
+            label8.Location = new Point(32, 106);
             label8.Name = "label8";
             label8.Size = new Size(80, 20);
             label8.TabIndex = 66;
@@ -193,7 +193,7 @@
             // label9
             // 
             label9.AutoSize = true;
-            label9.Location = new Point(44, 174);
+            label9.Location = new Point(32, 137);
             label9.Name = "label9";
             label9.Size = new Size(98, 20);
             label9.TabIndex = 67;
@@ -202,7 +202,7 @@
             // label10
             // 
             label10.AutoSize = true;
-            label10.Location = new Point(44, 204);
+            label10.Location = new Point(32, 167);
             label10.Name = "label10";
             label10.Size = new Size(91, 20);
             label10.TabIndex = 68;
@@ -211,7 +211,7 @@
             // label11
             // 
             label11.AutoSize = true;
-            label11.Location = new Point(17, 143);
+            label11.Location = new Point(5, 106);
             label11.Name = "label11";
             label11.Size = new Size(30, 20);
             label11.TabIndex = 64;
@@ -220,7 +220,7 @@
             // label12
             // 
             label12.AutoSize = true;
-            label12.Location = new Point(17, 174);
+            label12.Location = new Point(5, 137);
             label12.Name = "label12";
             label12.Size = new Size(30, 20);
             label12.TabIndex = 69;
@@ -230,7 +230,7 @@
             // label13
             // 
             label13.AutoSize = true;
-            label13.Location = new Point(17, 204);
+            label13.Location = new Point(5, 167);
             label13.Name = "label13";
             label13.Size = new Size(30, 20);
             label13.TabIndex = 70;
@@ -239,7 +239,7 @@
             // label14
             // 
             label14.AutoSize = true;
-            label14.Location = new Point(17, 46);
+            label14.Location = new Point(5, 9);
             label14.Name = "label14";
             label14.Size = new Size(30, 20);
             label14.TabIndex = 71;
@@ -248,7 +248,7 @@
             // label15
             // 
             label15.AutoSize = true;
-            label15.Location = new Point(17, 78);
+            label15.Location = new Point(5, 41);
             label15.Name = "label15";
             label15.Size = new Size(30, 20);
             label15.TabIndex = 72;
@@ -257,7 +257,7 @@
             // label16
             // 
             label16.AutoSize = true;
-            label16.Location = new Point(44, 114);
+            label16.Location = new Point(32, 77);
             label16.Name = "label16";
             label16.Size = new Size(146, 20);
             label16.TabIndex = 73;
@@ -267,7 +267,7 @@
             // label17
             // 
             label17.AutoSize = true;
-            label17.Location = new Point(17, 114);
+            label17.Location = new Point(5, 77);
             label17.Name = "label17";
             label17.Size = new Size(30, 20);
             label17.TabIndex = 74;
@@ -277,7 +277,7 @@
             // 
             txtSoilCondition.BackColor = SystemColors.ButtonFace;
             txtSoilCondition.BorderStyle = BorderStyle.None;
-            txtSoilCondition.Location = new Point(157, 46);
+            txtSoilCondition.Location = new Point(145, 9);
             txtSoilCondition.Name = "txtSoilCondition";
             txtSoilCondition.Size = new Size(422, 20);
             txtSoilCondition.TabIndex = 65;
@@ -287,7 +287,7 @@
             // 
             txtRecomendedPlant.BackColor = SystemColors.ButtonFace;
             txtRecomendedPlant.BorderStyle = BorderStyle.None;
-            txtRecomendedPlant.Location = new Point(204, 78);
+            txtRecomendedPlant.Location = new Point(192, 41);
             txtRecomendedPlant.Name = "txtRecomendedPlant";
             txtRecomendedPlant.Size = new Size(375, 20);
             txtRecomendedPlant.TabIndex = 75;
@@ -297,7 +297,7 @@
             // 
             txtRecomendedSoil.BackColor = SystemColors.ButtonFace;
             txtRecomendedSoil.BorderStyle = BorderStyle.None;
-            txtRecomendedSoil.Location = new Point(196, 114);
+            txtRecomendedSoil.Location = new Point(184, 77);
             txtRecomendedSoil.Name = "txtRecomendedSoil";
             txtRecomendedSoil.Size = new Size(383, 20);
             txtRecomendedSoil.TabIndex = 76;
@@ -307,7 +307,7 @@
             // 
             txtWaterTip.BackColor = SystemColors.ButtonFace;
             txtWaterTip.BorderStyle = BorderStyle.None;
-            txtWaterTip.Location = new Point(130, 143);
+            txtWaterTip.Location = new Point(118, 106);
             txtWaterTip.Name = "txtWaterTip";
             txtWaterTip.Size = new Size(449, 20);
             txtWaterTip.TabIndex = 77;
@@ -317,7 +317,7 @@
             // 
             txtFertilizerTip.BackColor = SystemColors.ButtonFace;
             txtFertilizerTip.BorderStyle = BorderStyle.None;
-            txtFertilizerTip.Location = new Point(148, 174);
+            txtFertilizerTip.Location = new Point(136, 137);
             txtFertilizerTip.Name = "txtFertilizerTip";
             txtFertilizerTip.Size = new Size(431, 20);
             txtFertilizerTip.TabIndex = 78;
@@ -326,7 +326,7 @@
             // 
             txtHarvestTip.BackColor = SystemColors.ButtonFace;
             txtHarvestTip.BorderStyle = BorderStyle.None;
-            txtHarvestTip.Location = new Point(141, 204);
+            txtHarvestTip.Location = new Point(129, 167);
             txtHarvestTip.Name = "txtHarvestTip";
             txtHarvestTip.Size = new Size(432, 20);
             txtHarvestTip.TabIndex = 79;
@@ -351,9 +351,9 @@
             grpOutput.Controls.Add(label8);
             grpOutput.Controls.Add(label7);
             grpOutput.Controls.Add(label6);
-            grpOutput.Location = new Point(12, 368);
+            grpOutput.Location = new Point(11, 404);
             grpOutput.Name = "grpOutput";
-            grpOutput.Size = new Size(579, 242);
+            grpOutput.Size = new Size(579, 188);
             grpOutput.TabIndex = 63;
             grpOutput.TabStop = false;
             grpOutput.Enter += grpOutput_Enter;
@@ -362,7 +362,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(791, 648);
+            ClientSize = new Size(605, 648);
             Controls.Add(btnTest);
             Controls.Add(grpOutput);
             Controls.Add(btnBack);
