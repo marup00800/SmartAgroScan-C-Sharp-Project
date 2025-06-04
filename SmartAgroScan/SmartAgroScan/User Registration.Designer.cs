@@ -30,7 +30,7 @@
         {
             btnConfirm = new Button();
             dateTimePicker = new DateTimePicker();
-            radioButtonAdmin = new RadioButton();
+            radioButtonUser = new RadioButton();
             groupBoxGender = new GroupBox();
             radioButtonMale = new RadioButton();
             radioButtonFemale = new RadioButton();
@@ -68,17 +68,17 @@
             dateTimePicker.Size = new Size(265, 27);
             dateTimePicker.TabIndex = 77;
             // 
-            // radioButtonAdmin
+            // radioButtonUser
             // 
-            radioButtonAdmin.AutoSize = true;
-            radioButtonAdmin.Checked = true;
-            radioButtonAdmin.Location = new Point(286, 234);
-            radioButtonAdmin.Name = "radioButtonAdmin";
-            radioButtonAdmin.Size = new Size(74, 24);
-            radioButtonAdmin.TabIndex = 76;
-            radioButtonAdmin.TabStop = true;
-            radioButtonAdmin.Text = "Admin";
-            radioButtonAdmin.UseVisualStyleBackColor = true;
+            radioButtonUser.AutoSize = true;
+            radioButtonUser.Checked = true;
+            radioButtonUser.Location = new Point(286, 234);
+            radioButtonUser.Name = "radioButtonUser";
+            radioButtonUser.Size = new Size(59, 24);
+            radioButtonUser.TabIndex = 76;
+            radioButtonUser.TabStop = true;
+            radioButtonUser.Text = "User";
+            radioButtonUser.UseVisualStyleBackColor = true;
             // 
             // groupBoxGender
             // 
@@ -236,7 +236,7 @@
             ClientSize = new Size(800, 450);
             Controls.Add(btnConfirm);
             Controls.Add(dateTimePicker);
-            Controls.Add(radioButtonAdmin);
+            Controls.Add(radioButtonUser);
             Controls.Add(groupBoxGender);
             Controls.Add(txtAge);
             Controls.Add(textBox3);
@@ -265,7 +265,7 @@
 
         private Button btnConfirm;
         private DateTimePicker dateTimePicker;
-        private RadioButton radioButtonAdmin;
+        private RadioButton radioButtonUser;
         private GroupBox groupBoxGender;
         private RadioButton radioButtonMale;
         private RadioButton radioButtonFemale;

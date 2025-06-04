@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "F:\\OneDrive - American International University-Bangladesh\\Documents\\Desktop\\C# Project\\Test Project\\SmartAgroScan\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E01D8AB5-0A7E-4B2D-BC43-6FD912475442}|SmartAgroScan\\SmartAgroScan.csproj|f:\\onedrive - american international university-bangladesh\\documents\\desktop\\c# project\\test project\\smartagroscan\\smartagroscan\\soil test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E01D8AB5-0A7E-4B2D-BC43-6FD912475442}|SmartAgroScan\\SmartAgroScan.csproj|solutionrelative:smartagroscan\\soil test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{E01D8AB5-0A7E-4B2D-BC43-6FD912475442}|SmartAgroScan\\SmartAgroScan.csproj|f:\\onedrive - american international university-bangladesh\\documents\\desktop\\c# project\\test project\\smartagroscan\\smartagroscan\\user registration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E01D8AB5-0A7E-4B2D-BC43-6FD912475442}|SmartAgroScan\\SmartAgroScan.csproj|solutionrelative:smartagroscan\\user registration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E01D8AB5-0A7E-4B2D-BC43-6FD912475442}|SmartAgroScan\\SmartAgroScan.csproj|f:\\onedrive - american international university-bangladesh\\documents\\desktop\\c# project\\test project\\smartagroscan\\smartagroscan\\user registration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E01D8AB5-0A7E-4B2D-BC43-6FD912475442}|SmartAgroScan\\SmartAgroScan.csproj|solutionrelative:smartagroscan\\user registration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E01D8AB5-0A7E-4B2D-BC43-6FD912475442}|SmartAgroScan\\SmartAgroScan.csproj|f:\\onedrive - american international university-bangladesh\\documents\\desktop\\c# project\\test project\\smartagroscan\\smartagroscan\\soil test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E01D8AB5-0A7E-4B2D-BC43-6FD912475442}|SmartAgroScan\\SmartAgroScan.csproj|solutionrelative:smartagroscan\\soil test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E01D8AB5-0A7E-4B2D-BC43-6FD912475442}|SmartAgroScan\\SmartAgroScan.csproj|f:\\onedrive - american international university-bangladesh\\documents\\desktop\\c# project\\test project\\smartagroscan\\smartagroscan\\user table.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E01D8AB5-0A7E-4B2D-BC43-6FD912475442}|SmartAgroScan\\SmartAgroScan.csproj|solutionrelative:smartagroscan\\user table.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E01D8AB5-0A7E-4B2D-BC43-6FD912475442}|SmartAgroScan\\SmartAgroScan.csproj|f:\\onedrive - american international university-bangladesh\\documents\\desktop\\c# project\\test project\\smartagroscan\\smartagroscan\\soil test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E01D8AB5-0A7E-4B2D-BC43-6FD912475442}|SmartAgroScan\\SmartAgroScan.csproj|solutionrelative:smartagroscan\\soil test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E01D8AB5-0A7E-4B2D-BC43-6FD912475442}|SmartAgroScan\\SmartAgroScan.csproj|f:\\onedrive - american international university-bangladesh\\documents\\desktop\\c# project\\test project\\smartagroscan\\smartagroscan\\user login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -21,6 +25,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{E01D8AB5-0A7E-4B2D-BC43-6FD912475442}|SmartAgroScan\\SmartAgroScan.csproj|F:\\OneDrive - American International University-Bangladesh\\Documents\\Desktop\\C# Project\\Test Project\\SmartAgroScan\\smartagroscan\\user login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{E01D8AB5-0A7E-4B2D-BC43-6FD912475442}|SmartAgroScan\\SmartAgroScan.csproj|solutionrelative:smartagroscan\\user login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E01D8AB5-0A7E-4B2D-BC43-6FD912475442}|SmartAgroScan\\SmartAgroScan.csproj|f:\\onedrive - american international university-bangladesh\\documents\\desktop\\c# project\\test project\\smartagroscan\\smartagroscan\\user table.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E01D8AB5-0A7E-4B2D-BC43-6FD912475442}|SmartAgroScan\\SmartAgroScan.csproj|solutionrelative:smartagroscan\\user table.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 648,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,7 +46,32 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "User Registration.cs",
+              "DocumentMoniker": "F:\\OneDrive - American International University-Bangladesh\\Documents\\Desktop\\C# Project\\Test Project\\SmartAgroScan\\SmartAgroScan\\User Registration.cs",
+              "RelativeDocumentMoniker": "SmartAgroScan\\User Registration.cs",
+              "ToolTip": "F:\\OneDrive - American International University-Bangladesh\\Documents\\Desktop\\C# Project\\Test Project\\SmartAgroScan\\SmartAgroScan\\User Registration.cs",
+              "RelativeToolTip": "SmartAgroScan\\User Registration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-04T19:54:09.026Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "User Registration.cs [Design]",
+              "DocumentMoniker": "F:\\OneDrive - American International University-Bangladesh\\Documents\\Desktop\\C# Project\\Test Project\\SmartAgroScan\\SmartAgroScan\\User Registration.cs",
+              "RelativeDocumentMoniker": "SmartAgroScan\\User Registration.cs",
+              "ToolTip": "F:\\OneDrive - American International University-Bangladesh\\Documents\\Desktop\\C# Project\\Test Project\\SmartAgroScan\\SmartAgroScan\\User Registration.cs [Design]",
+              "RelativeToolTip": "SmartAgroScan\\User Registration.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-04T19:54:04.339Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Soil Test.cs",
               "DocumentMoniker": "F:\\OneDrive - American International University-Bangladesh\\Documents\\Desktop\\C# Project\\Test Project\\SmartAgroScan\\SmartAgroScan\\Soil Test.cs",
               "RelativeDocumentMoniker": "SmartAgroScan\\Soil Test.cs",
@@ -51,7 +84,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Soil Test.cs [Design]",
               "DocumentMoniker": "F:\\OneDrive - American International University-Bangladesh\\Documents\\Desktop\\C# Project\\Test Project\\SmartAgroScan\\SmartAgroScan\\Soil Test.cs",
               "RelativeDocumentMoniker": "SmartAgroScan\\Soil Test.cs",
@@ -63,7 +96,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "User Login.cs",
               "DocumentMoniker": "F:\\OneDrive - American International University-Bangladesh\\Documents\\Desktop\\C# Project\\Test Project\\SmartAgroScan\\SmartAgroScan\\User Login.cs",
               "RelativeDocumentMoniker": "SmartAgroScan\\User Login.cs",
@@ -76,7 +109,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "User Login.cs [Design]",
               "DocumentMoniker": "F:\\OneDrive - American International University-Bangladesh\\Documents\\Desktop\\C# Project\\Test Project\\SmartAgroScan\\SmartAgroScan\\User Login.cs",
               "RelativeDocumentMoniker": "SmartAgroScan\\User Login.cs",
@@ -88,7 +121,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "User Table.cs",
               "DocumentMoniker": "F:\\OneDrive - American International University-Bangladesh\\Documents\\Desktop\\C# Project\\Test Project\\SmartAgroScan\\SmartAgroScan\\User Table.cs",
               "RelativeDocumentMoniker": "SmartAgroScan\\User Table.cs",

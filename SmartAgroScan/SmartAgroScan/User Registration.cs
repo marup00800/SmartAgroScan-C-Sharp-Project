@@ -21,7 +21,7 @@ namespace SmartAgroScan
 
         private void User_Registration_Load(object sender, EventArgs e)
         {
-            
+
         }
 
         private void btnBack_Click(object sender, EventArgs e)
@@ -33,28 +33,43 @@ namespace SmartAgroScan
 
         private void btnConfirm_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            User_Login userLogin = new User_Login();
-            userLogin.ShowDialog();
 
-            String connectionString = @"Data Source=MARUP;Initial Catalog=PlantTest;Integrated Security=True;Trust Server Certificate=True";
+            string gender = groupBoxGender.Controls.OfType<RadioButton>()
+                .First(r => r.Checked).Text;
+
+            string connectionString = @"Data Source=MARUP;Initial Catalog=PlantTest;Integrated Security=True;Trust Server Certificate=True";
             SqlConnection connection = new SqlConnection(connectionString);
             connection.Open();
-            string query = "INSERT INTO Users [UserID], [FullName], [Username], [Password], [Gender], [Role], [Age], [DOB]" +
-                "VALUES (@FullName, @Username, @Password, @Occupation, @Gender, @DOB)";
+            string query = "INSERT INTO Users (FullName, Username, Password, Gender, Role, Age, DOB) " +
+                           "VALUES (@FullName, @Username, @Password, @Gender, @Role, @Age, @DOB)";
 
             SqlCommand cmd = new SqlCommand(query, connection);
-            
-            string gender = groupBoxGender.Controls.OfType<RadioButton>()
-               .First(r => r.Checked).Text;
 
             cmd.Parameters.AddWithValue("@FullName", txtFullName.Text);
             cmd.Parameters.AddWithValue("@Username", txtUsername.Text);
             cmd.Parameters.AddWithValue("@Password", txtPassword.Text);
             cmd.Parameters.AddWithValue("@Gender", gender);
-            cmd.Parameters.AddWithValue("@Role", radioButtonAdmin);
+            cmd.Parameters.AddWithValue("@Role", "User");
             cmd.Parameters.AddWithValue("@Age", txtAge.Text);
-            cmd.Parameters.AddWithValue("@DOB", dateTimePicker.Value.ToString("yyyy-MM-dd"));
+            cmd.Parameters.AddWithValue("@DOB", dateTimePicker.Value);
+
+            try
+            {
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Registration successful!");
+                this.Hide();
+                User_Login userLogin = new User_Login();
+                userLogin.ShowDialog();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
+            finally
+            {
+                connection.Close();
+            }
         }
+
     }
 }
