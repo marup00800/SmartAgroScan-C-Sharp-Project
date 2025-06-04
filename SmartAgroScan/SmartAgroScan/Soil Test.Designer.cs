@@ -59,13 +59,16 @@
             txtFertilizerTip = new TextBox();
             txtHarvestTip = new TextBox();
             grpOutput = new GroupBox();
+            pictureBoxPlant = new PictureBox();
+            label18 = new Label();
             grpOutput.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxPlant).BeginInit();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(64, 103);
+            label1.Location = new Point(226, 117);
             label1.Name = "label1";
             label1.Size = new Size(27, 20);
             label1.TabIndex = 0;
@@ -74,7 +77,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(67, 158);
+            label2.Location = new Point(229, 172);
             label2.Name = "label2";
             label2.Size = new Size(24, 20);
             label2.TabIndex = 1;
@@ -83,7 +86,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(66, 204);
+            label3.Location = new Point(228, 218);
             label3.Name = "label3";
             label3.Size = new Size(25, 20);
             label3.TabIndex = 2;
@@ -92,7 +95,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(55, 264);
+            label4.Location = new Point(217, 278);
             label4.Name = "label4";
             label4.Size = new Size(36, 20);
             label4.TabIndex = 3;
@@ -101,7 +104,7 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(17, 317);
+            label5.Location = new Point(179, 331);
             label5.Name = "label5";
             label5.Size = new Size(74, 20);
             label5.TabIndex = 4;
@@ -109,42 +112,42 @@
             // 
             // txtN
             // 
-            txtN.Location = new Point(97, 100);
+            txtN.Location = new Point(259, 114);
             txtN.Name = "txtN";
             txtN.Size = new Size(145, 27);
             txtN.TabIndex = 5;
             // 
             // txtP
             // 
-            txtP.Location = new Point(97, 151);
+            txtP.Location = new Point(259, 165);
             txtP.Name = "txtP";
             txtP.Size = new Size(145, 27);
             txtP.TabIndex = 6;
             // 
             // txtK
             // 
-            txtK.Location = new Point(97, 204);
+            txtK.Location = new Point(259, 218);
             txtK.Name = "txtK";
             txtK.Size = new Size(145, 27);
             txtK.TabIndex = 7;
             // 
             // txtPH
             // 
-            txtPH.Location = new Point(97, 257);
+            txtPH.Location = new Point(259, 271);
             txtPH.Name = "txtPH";
             txtPH.Size = new Size(145, 27);
             txtPH.TabIndex = 8;
             // 
             // txtMoisture
             // 
-            txtMoisture.Location = new Point(97, 310);
+            txtMoisture.Location = new Point(259, 324);
             txtMoisture.Name = "txtMoisture";
             txtMoisture.Size = new Size(145, 27);
             txtMoisture.TabIndex = 9;
             // 
             // btnBack
             // 
-            btnBack.Location = new Point(485, 598);
+            btnBack.Location = new Point(531, 667);
             btnBack.Name = "btnBack";
             btnBack.Size = new Size(105, 38);
             btnBack.TabIndex = 62;
@@ -154,7 +157,7 @@
             // 
             // btnTest
             // 
-            btnTest.Location = new Point(111, 360);
+            btnTest.Location = new Point(273, 374);
             btnTest.Name = "btnTest";
             btnTest.Size = new Size(105, 38);
             btnTest.TabIndex = 64;
@@ -333,6 +336,7 @@
             // 
             // grpOutput
             // 
+            grpOutput.Controls.Add(pictureBoxPlant);
             grpOutput.Controls.Add(txtHarvestTip);
             grpOutput.Controls.Add(txtFertilizerTip);
             grpOutput.Controls.Add(txtWaterTip);
@@ -351,18 +355,39 @@
             grpOutput.Controls.Add(label8);
             grpOutput.Controls.Add(label7);
             grpOutput.Controls.Add(label6);
-            grpOutput.Location = new Point(11, 404);
+            grpOutput.Location = new Point(17, 432);
             grpOutput.Name = "grpOutput";
-            grpOutput.Size = new Size(579, 188);
+            grpOutput.Size = new Size(619, 225);
             grpOutput.TabIndex = 63;
             grpOutput.TabStop = false;
             grpOutput.Enter += grpOutput_Enter;
+            // 
+            // pictureBoxPlant
+            // 
+            pictureBoxPlant.Location = new Point(450, 15);
+            pictureBoxPlant.Name = "pictureBoxPlant";
+            pictureBoxPlant.Size = new Size(163, 172);
+            pictureBoxPlant.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBoxPlant.TabIndex = 65;
+            pictureBoxPlant.TabStop = false;
+            pictureBoxPlant.Click += pictureBoxPlant_Click;
+            // 
+            // label18
+            // 
+            label18.AutoSize = true;
+            label18.Font = new Font("Segoe UI", 15F);
+            label18.Location = new Point(209, 23);
+            label18.Name = "label18";
+            label18.Size = new Size(245, 35);
+            label18.TabIndex = 65;
+            label18.Text = "Welcome to Soil Test";
             // 
             // Soil_Test
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(605, 648);
+            ClientSize = new Size(651, 716);
+            Controls.Add(label18);
             Controls.Add(btnTest);
             Controls.Add(grpOutput);
             Controls.Add(btnBack);
@@ -381,6 +406,7 @@
             Load += Soil_Test_Load;
             grpOutput.ResumeLayout(false);
             grpOutput.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxPlant).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -418,5 +444,7 @@
         private TextBox txtRecomendedSoil;
         private TextBox txtRecomendedPlant;
         private TextBox txtSoilCondition;
+        private PictureBox pictureBoxPlant;
+        private Label label18;
     }
 }

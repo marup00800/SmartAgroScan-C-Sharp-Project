@@ -66,13 +66,13 @@ namespace SmartAgroScan
             cmd.Parameters.AddWithValue("@N", n);
             cmd.Parameters.AddWithValue("@P", p);
             cmd.Parameters.AddWithValue("@K", k);
-           // cmd.Parameters.AddWithValue("@pH", ph);
+            // cmd.Parameters.AddWithValue("@pH", ph);
             cmd.Parameters.AddWithValue("@Moisture", moisture);
 
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             DataSet ds = new DataSet();
-            da.Fill(ds); 
-            DataTable dt = ds.Tables[0]; 
+            da.Fill(ds);
+            DataTable dt = ds.Tables[0];
             if (dt.Rows.Count > 0)
             {
                 txtSoilCondition.Text = SoilCondition(ph);
@@ -82,6 +82,20 @@ namespace SmartAgroScan
                 txtWaterTip.Text = dt.Rows[0]["WaterTip"].ToString();
                 txtFertilizerTip.Text = dt.Rows[0]["FertilizerTip"].ToString();
                 txtHarvestTip.Text = dt.Rows[0]["HarvestTip"].ToString();
+
+                string picturePath = dt.Rows[0]["PicturePath"].ToString();
+
+                string fullPath = Path.Combine(Application.StartupPath, picturePath); // picturePath = "images/tomato.jpg"
+
+                if (File.Exists(fullPath))
+                {
+                    pictureBoxPlant.Image = Image.FromFile(fullPath);
+                }
+                else
+                {
+                    MessageBox.Show("Image file not found: " + fullPath);
+                    pictureBoxPlant.Image = null; // Clear the image if not found
+                }
             }
             else
             {
@@ -156,10 +170,10 @@ namespace SmartAgroScan
 
         }
 
-        private void Soil_Test_Load(object sender, EventArgs e)
+        private void Soil_Test_Load(object sender, EventArgs e)//Warning: Dont remove this method, it is required for the form to load properly.
         {
 
-        } //Warning: Dont remove this method, it is required for the form to load properly.
+        }
 
         private void txtRecomendedPlant_TextChanged(object sender, EventArgs e)
         {
@@ -186,6 +200,14 @@ namespace SmartAgroScan
 
         }
 
-        
+        private void pictureBoxPlant_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void statusStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
     }
 }

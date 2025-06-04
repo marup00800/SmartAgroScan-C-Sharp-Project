@@ -1672,11 +1672,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\OneDrive - American International University-Bangladesh\\Documents\\Desktop\\C# Project\\Test Project for GitHub\\SmartAgroScan\\SmartAgroScan\\SmartAgroScan.csproj",
+      "projectUniqueName": "F:\\OneDrive - American International University-Bangladesh\\Documents\\Desktop\\C# Project\\Test Project\\SmartAgroScan\\SmartAgroScan\\SmartAgroScan.csproj",
       "projectName": "SmartAgroScan",
-      "projectPath": "F:\\OneDrive - American International University-Bangladesh\\Documents\\Desktop\\C# Project\\Test Project for GitHub\\SmartAgroScan\\SmartAgroScan\\SmartAgroScan.csproj",
+      "projectPath": "F:\\OneDrive - American International University-Bangladesh\\Documents\\Desktop\\C# Project\\Test Project\\SmartAgroScan\\SmartAgroScan\\SmartAgroScan.csproj",
       "packagesPath": "C:\\Users\\marup\\.nuget\\packages\\",
-      "outputPath": "F:\\OneDrive - American International University-Bangladesh\\Documents\\Desktop\\C# Project\\Test Project for GitHub\\SmartAgroScan\\SmartAgroScan\\obj\\",
+      "outputPath": "F:\\OneDrive - American International University-Bangladesh\\Documents\\Desktop\\C# Project\\Test Project\\SmartAgroScan\\SmartAgroScan\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

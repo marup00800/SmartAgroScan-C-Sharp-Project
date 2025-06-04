@@ -62,5 +62,10 @@ namespace SmartAgroScan
 
 
         }
+
+        private void User_Login_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
