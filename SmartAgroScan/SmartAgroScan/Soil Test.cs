@@ -12,10 +12,13 @@ using Microsoft.Data.SqlClient;
 
 namespace SmartAgroScan
 {
+    
     public partial class Soil_Test : Form
     {
-        public Soil_Test()
+        private string userName;
+        public Soil_Test(string username)
         {
+            userName = username;
             InitializeComponent();
             this.StartPosition = FormStartPosition.CenterScreen;
         }
@@ -140,6 +143,13 @@ namespace SmartAgroScan
 
         }
 
+        
+
+        private void Soil_Test_Load(object sender, EventArgs e)//Warning: Dont remove this method, it is required for the form to load properly.
+        {
+            Wusername.Text = userName; // Display the username in the label
+        }
+
         private void grpOutput_Enter(object sender, EventArgs e)
         {
 
@@ -170,10 +180,7 @@ namespace SmartAgroScan
 
         }
 
-        private void Soil_Test_Load(object sender, EventArgs e)//Warning: Dont remove this method, it is required for the form to load properly.
-        {
 
-        }
 
         private void txtRecomendedPlant_TextChanged(object sender, EventArgs e)
         {
@@ -206,6 +213,16 @@ namespace SmartAgroScan
         }
 
         private void statusStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void btnSend_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void richTextBoxGlobalChat_TextChanged(object sender, EventArgs e)
         {
 
         }

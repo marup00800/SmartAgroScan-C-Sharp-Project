@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             label1 = new Label();
             label2 = new Label();
             label3 = new Label();
@@ -61,6 +62,11 @@
             grpOutput = new GroupBox();
             pictureBoxPlant = new PictureBox();
             label18 = new Label();
+            richTextBoxGlobalChat = new RichTextBox();
+            txtMessage = new TextBox();
+            btnSend = new Button();
+            timer1 = new System.Windows.Forms.Timer(components);
+            Wusername = new Label();
             grpOutput.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBoxPlant).BeginInit();
             SuspendLayout();
@@ -382,11 +388,54 @@
             label18.TabIndex = 65;
             label18.Text = "Welcome to Soil Test";
             // 
+            // richTextBoxGlobalChat
+            // 
+            richTextBoxGlobalChat.Location = new Point(667, 45);
+            richTextBoxGlobalChat.Name = "richTextBoxGlobalChat";
+            richTextBoxGlobalChat.Size = new Size(311, 262);
+            richTextBoxGlobalChat.TabIndex = 66;
+            richTextBoxGlobalChat.Text = "";
+            richTextBoxGlobalChat.TextChanged += richTextBoxGlobalChat_TextChanged;
+            // 
+            // txtMessage
+            // 
+            txtMessage.Location = new Point(667, 313);
+            txtMessage.Name = "txtMessage";
+            txtMessage.Size = new Size(311, 27);
+            txtMessage.TabIndex = 67;
+            // 
+            // btnSend
+            // 
+            btnSend.Location = new Point(759, 357);
+            btnSend.Name = "btnSend";
+            btnSend.Size = new Size(105, 38);
+            btnSend.TabIndex = 68;
+            btnSend.Text = "Send";
+            btnSend.UseVisualStyleBackColor = true;
+            btnSend.Click += btnSend_Click;
+            // 
+            // timer1
+            // 
+            timer1.Interval = 2000;
+            // 
+            // Wusername
+            // 
+            Wusername.AutoSize = true;
+            Wusername.Font = new Font("Segoe UI", 15F);
+            Wusername.Location = new Point(482, 23);
+            Wusername.Name = "Wusername";
+            Wusername.Size = new Size(0, 35);
+            Wusername.TabIndex = 69;
+            // 
             // Soil_Test
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(651, 716);
+            ClientSize = new Size(1056, 716);
+            Controls.Add(Wusername);
+            Controls.Add(btnSend);
+            Controls.Add(txtMessage);
+            Controls.Add(richTextBoxGlobalChat);
             Controls.Add(label18);
             Controls.Add(btnTest);
             Controls.Add(grpOutput);
@@ -446,5 +495,10 @@
         private TextBox txtSoilCondition;
         private PictureBox pictureBoxPlant;
         private Label label18;
+        private RichTextBox richTextBoxGlobalChat;
+        private TextBox txtMessage;
+        private Button btnSend;
+        private System.Windows.Forms.Timer timer1;
+        private Label Wusername;
     }
 }

@@ -52,7 +52,7 @@ namespace SmartAgroScan
             {
                 MessageBox.Show("Login successful!");
                 this.Hide();
-                Soil_Test soilTestForm = new Soil_Test();
+                Soil_Test soilTestForm = new Soil_Test(username);
                 soilTestForm.ShowDialog();
             }
             else
