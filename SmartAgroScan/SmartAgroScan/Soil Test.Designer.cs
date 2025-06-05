@@ -390,7 +390,7 @@
             // 
             // richTextBoxGlobalChat
             // 
-            richTextBoxGlobalChat.Location = new Point(667, 45);
+            richTextBoxGlobalChat.Location = new Point(713, 36);
             richTextBoxGlobalChat.Name = "richTextBoxGlobalChat";
             richTextBoxGlobalChat.Size = new Size(311, 262);
             richTextBoxGlobalChat.TabIndex = 66;
@@ -399,14 +399,15 @@
             // 
             // txtMessage
             // 
-            txtMessage.Location = new Point(667, 313);
+            txtMessage.Location = new Point(713, 304);
             txtMessage.Name = "txtMessage";
             txtMessage.Size = new Size(311, 27);
             txtMessage.TabIndex = 67;
+            txtMessage.TextChanged += txtMessage_TextChanged;
             // 
             // btnSend
             // 
-            btnSend.Location = new Point(759, 357);
+            btnSend.Location = new Point(805, 348);
             btnSend.Name = "btnSend";
             btnSend.Size = new Size(105, 38);
             btnSend.TabIndex = 68;
@@ -416,7 +417,8 @@
             // 
             // timer1
             // 
-            timer1.Interval = 2000;
+            timer1.Interval = 5000;
+            timer1.Tick += timer1_Tick;
             // 
             // Wusername
             // 
@@ -432,10 +434,10 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1056, 716);
-            Controls.Add(Wusername);
-            Controls.Add(btnSend);
-            Controls.Add(txtMessage);
             Controls.Add(richTextBoxGlobalChat);
+            Controls.Add(txtMessage);
+            Controls.Add(btnSend);
+            Controls.Add(Wusername);
             Controls.Add(label18);
             Controls.Add(btnTest);
             Controls.Add(grpOutput);

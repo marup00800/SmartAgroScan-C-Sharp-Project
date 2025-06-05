@@ -12,10 +12,13 @@ using Microsoft.Data.SqlClient;
 
 namespace SmartAgroScan
 {
-    
+
     public partial class Soil_Test : Form
     {
         private string userName;
+
+        GlobalChatService chatService = new GlobalChatService();
+
         public Soil_Test(string username)
         {
             userName = username;
@@ -143,12 +146,36 @@ namespace SmartAgroScan
 
         }
 
-        
+        private void btnSend_Click(object sender, EventArgs e)
+        {
+            chatService.InsertMessage(Wusername.Text, txtMessage.Text);
+            chatService.LoadMessages(richTextBoxGlobalChat);
+
+            richTextBoxGlobalChat.SelectionStart = richTextBoxGlobalChat.Text.Length;
+            richTextBoxGlobalChat.ScrollToCaret();
+
+            txtMessage.Clear();
+            txtMessage.Focus();
+        }
+
+
 
         private void Soil_Test_Load(object sender, EventArgs e)//Warning: Dont remove this method, it is required for the form to load properly.
         {
             Wusername.Text = userName; // Display the username in the label
+            chatService.LoadMessages(richTextBoxGlobalChat);
+            timer1.Start();
         }
+
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            chatService.LoadMessages(richTextBoxGlobalChat);
+
+            richTextBoxGlobalChat.SelectionStart = richTextBoxGlobalChat.Text.Length;
+            richTextBoxGlobalChat.ScrollToCaret();
+        }
+
 
         private void grpOutput_Enter(object sender, EventArgs e)
         {
@@ -217,12 +244,19 @@ namespace SmartAgroScan
 
         }
 
-        private void btnSend_Click(object sender, EventArgs e)
+
+
+        private void richTextBoxGlobalChat_TextChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void richTextBoxGlobalChat_TextChanged(object sender, EventArgs e)
+        private void txtMessage_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripContainer1_ContentPanel_Load(object sender, EventArgs e)
         {
 
         }
