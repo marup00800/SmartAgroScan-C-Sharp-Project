@@ -43,16 +43,17 @@ namespace SmartAgroScan
             string connectionString = @"Data Source=MARUP;Initial Catalog=PlantTest;Integrated Security=True;Trust Server Certificate=True";
             SqlConnection connection = new SqlConnection(connectionString);
             connection.Open();
-            string query = "SELECT * FROM Users WHERE Username = @Username AND Password = @Password";
+            string query = "SELECT UserID FROM Users WHERE Username = @Username AND Password = @Password";
             SqlCommand cmd = new SqlCommand(query, connection);
             cmd.Parameters.AddWithValue("@Username", username);
             cmd.Parameters.AddWithValue("@Password", password);
             SqlDataReader reader = cmd.ExecuteReader();
-            if (reader.HasRows)
+            if (reader.Read()) // 
             {
+                int userId = (int)reader["UserId"];
                 MessageBox.Show("Login successful!");
                 this.Hide();
-                Soil_Test soilTestForm = new Soil_Test(username);
+                Soil_Test soilTestForm = new Soil_Test(username, userId);
                 soilTestForm.ShowDialog();
             }
             else
