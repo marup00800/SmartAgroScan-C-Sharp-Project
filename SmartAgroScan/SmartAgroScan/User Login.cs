@@ -53,8 +53,13 @@ namespace SmartAgroScan
                 int userId = (int)reader["UserId"];
                 MessageBox.Show("Login successful!");
                 this.Hide();
+
+                Soil_Test_Tutorial soil_Test_Tutorial = new Soil_Test_Tutorial();
                 Soil_Test soilTestForm = new Soil_Test(username, userId);
-                soilTestForm.ShowDialog();
+
+                soilTestForm.Show();
+                soil_Test_Tutorial.Show();
+                
             }
             else
             {

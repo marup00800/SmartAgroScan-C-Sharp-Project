@@ -302,5 +302,16 @@ namespace SmartAgroScan
         {
 
         }
+
+        private void pictureBox2_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Soil_Test_Tutorial soil_Test_Tutorial = new Soil_Test_Tutorial();
+            soil_Test_Tutorial.ShowDialog();
+        }
     }
 }

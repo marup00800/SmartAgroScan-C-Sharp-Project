@@ -51,9 +51,11 @@
             timer1 = new System.Windows.Forms.Timer(components);
             Wusername = new Label();
             pictureBox1 = new PictureBox();
-            backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            pictureBox2 = new PictureBox();
+            button1 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBoxPlant).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
             // txtN
@@ -300,11 +302,37 @@
             pictureBox1.TabIndex = 70;
             pictureBox1.TabStop = false;
             // 
+            // pictureBox2
+            // 
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(12, 910);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(122, 66);
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox2.TabIndex = 80;
+            pictureBox2.TabStop = false;
+            pictureBox2.Click += pictureBox2_Click_1;
+            // 
+            // button1
+            // 
+            button1.BackColor = Color.FromArgb(98, 172, 115);
+            button1.FlatStyle = FlatStyle.Popup;
+            button1.Font = new Font("Segoe UI Emoji", 10.2F, FontStyle.Bold);
+            button1.Location = new Point(16, 927);
+            button1.Name = "button1";
+            button1.Size = new Size(107, 44);
+            button1.TabIndex = 81;
+            button1.Text = "Tutorial";
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
+            // 
             // Soil_Test
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1918, 981);
+            Controls.Add(button1);
+            Controls.Add(pictureBox2);
             Controls.Add(txtHarvestTip);
             Controls.Add(pictureBoxPlant);
             Controls.Add(txtFertilizerTip);
@@ -330,6 +358,7 @@
             Load += Soil_Test_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBoxPlant).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -356,6 +385,7 @@
         private System.Windows.Forms.Timer timer1;
         private Label Wusername;
         private PictureBox pictureBox1;
-        private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private PictureBox pictureBox2;
+        private Button button1;
     }
 }
