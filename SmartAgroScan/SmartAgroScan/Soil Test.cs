@@ -108,6 +108,27 @@ namespace SmartAgroScan
             else
             {
                 MessageBox.Show("Sorry, Data is not found.");
+
+                string query2 = "INSERT INTO SoilTestRequest (UserID, N, P, K, pH, Moisture) " +
+                   "VALUES (@UserID, @N, @P, @K, @pH, @Moisture)";
+                SqlCommand cmd2 = new SqlCommand(query2, connection);
+                cmd2.Parameters.AddWithValue("@UserID", userId);
+                cmd2.Parameters.AddWithValue("@N", n);
+                cmd2.Parameters.AddWithValue("@P", p);
+                cmd2.Parameters.AddWithValue("@K", k);
+                cmd2.Parameters.AddWithValue("@pH", ph);
+                cmd2.Parameters.AddWithValue("@Moisture", moisture);
+                cmd2.ExecuteNonQuery();
+                MessageBox.Show("Your request has been sent to the admin for further analysis. Thank you for your patience.");
+                txtSoilCondition.Clear();
+                txtN.Clear();
+                txtP.Clear();
+                txtK.Clear();
+                txtPH.Clear();
+                txtMoisture.Clear();
+                pictureBoxPlant.Image = null; // Clear the image if no plant is found
+
+
                 return;
 
             }
@@ -178,38 +199,18 @@ namespace SmartAgroScan
             richTextBoxGlobalChat.ScrollToCaret();
         }
 
-
-        private void grpOutput_Enter(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-
+            Soil_Test_Tutorial soil_Test_Tutorial = new Soil_Test_Tutorial();
+            soil_Test_Tutorial.ShowDialog();
         }
 
-        private void richTextBox1_TextChanged(object sender, EventArgs e)
-        {
 
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label12_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label16_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void txtSoilCondition_TextChanged(object sender, EventArgs e)
         {
 
         }
-
-
 
         private void txtRecomendedPlant_TextChanged(object sender, EventArgs e)
         {
@@ -226,27 +227,10 @@ namespace SmartAgroScan
 
         }
 
-        private void txtFertilizerTip_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtHarvestTip_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void pictureBoxPlant_Click(object sender, EventArgs e)
         {
 
         }
-
-        private void statusStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
-        {
-
-        }
-
-
 
         private void richTextBoxGlobalChat_TextChanged(object sender, EventArgs e)
         {
@@ -258,22 +242,12 @@ namespace SmartAgroScan
 
         }
 
-        private void toolStripContainer1_ContentPanel_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void label18_Click(object sender, EventArgs e)
         {
 
         }
 
         private void txtMoisture_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
         {
 
         }
@@ -308,10 +282,6 @@ namespace SmartAgroScan
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Soil_Test_Tutorial soil_Test_Tutorial = new Soil_Test_Tutorial();
-            soil_Test_Tutorial.ShowDialog();
-        }
+        
     }
 }
