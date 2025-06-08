@@ -25,7 +25,7 @@ namespace SmartAgroScan
             this.chatService = new GlobalChatService(userId);
             InitializeComponent();
             this.StartPosition = FormStartPosition.CenterScreen;
-            
+
         }
 
 
@@ -259,6 +259,46 @@ namespace SmartAgroScan
         }
 
         private void toolStripContainer1_ContentPanel_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label18_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtMoisture_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtPH_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtN_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtK_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtP_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Wusername_Click(object sender, EventArgs e)
         {
 
         }
