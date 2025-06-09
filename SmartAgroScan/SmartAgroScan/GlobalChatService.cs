@@ -64,9 +64,9 @@ namespace SmartAgroScan
             }
             reader.Close();
 
-            string query2 = "SELECT ua.UserID, ua.TestID, ua.ActivityType, u.Username " +
-                "FROM UserActivity ua JOIN Users u ON ua.UserID = u.UserID";
-             
+            string query2 = "SELECT  ua.UserID, ISNULL(CAST(ua.TestID AS VARCHAR), '000') AS TestID, ua.ActivityType, u.Username FROM UserActivity ua  JOIN Users u ON ua.UserID = u.UserID";
+
+
             SqlCommand cmd2 = new SqlCommand(query2, connection);
                 SqlDataReader reader2 = cmd2.ExecuteReader();
            

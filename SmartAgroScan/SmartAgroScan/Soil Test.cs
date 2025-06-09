@@ -108,8 +108,8 @@ namespace SmartAgroScan
                     MessageBox.Show("Image file not found: " + fullPath);
                     pictureBoxPlant.Image = null; // Clear the image if not found
                 }
-                
-                //Sotring the result in UserActivity table
+
+                //Data Found, Sotring the result in UserActivity table when result found + Show in Chatbox
                 string query2 = "INSERT INTO UserActivity (UserID, TestID, ActivityType)" +
                                    "VALUES(@UserID, @TestID, @ActivityType)";
                 SqlCommand cmd2 = new SqlCommand(query2, connection);
@@ -144,6 +144,13 @@ namespace SmartAgroScan
                 txtMoisture.Clear();
                 pictureBoxPlant.Image = null; // Clear the image if no plant is found
 
+                // Data did not found, Storing the request in UserActivity table + Show in Chatbox
+                string query3 = "INSERT INTO UserActivity (UserID, ActivityType)" +
+                                   "VALUES(@UserID, @ActivityType)";
+                SqlCommand cmd3 = new SqlCommand(query3, connection);
+                cmd3.Parameters.AddWithValue("@UserID", userId);
+                cmd3.Parameters.AddWithValue("@ActivityType", "Requested data to Admin");
+                cmd3.ExecuteNonQuery();
 
                 return;
 
