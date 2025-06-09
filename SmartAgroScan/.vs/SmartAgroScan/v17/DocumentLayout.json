@@ -9,6 +9,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{E01D8AB5-0A7E-4B2D-BC43-6FD912475442}|SmartAgroScan\\SmartAgroScan.csproj|f:\\onedrive - american international university-bangladesh\\documents\\desktop\\c# project\\test project\\smartagroscan\\smartagroscan\\globalchatservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E01D8AB5-0A7E-4B2D-BC43-6FD912475442}|SmartAgroScan\\SmartAgroScan.csproj|solutionrelative:smartagroscan\\globalchatservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E01D8AB5-0A7E-4B2D-BC43-6FD912475442}|SmartAgroScan\\SmartAgroScan.csproj|f:\\onedrive - american international university-bangladesh\\documents\\desktop\\c# project\\test project\\smartagroscan\\smartagroscan\\soil test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E01D8AB5-0A7E-4B2D-BC43-6FD912475442}|SmartAgroScan\\SmartAgroScan.csproj|solutionrelative:smartagroscan\\soil test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -32,7 +36,7 @@
               "RelativeDocumentMoniker": "SmartAgroScan\\GlobalChatService.cs",
               "ToolTip": "F:\\OneDrive - American International University-Bangladesh\\Documents\\Desktop\\C# Project\\Test Project\\SmartAgroScan\\SmartAgroScan\\GlobalChatService.cs",
               "RelativeToolTip": "SmartAgroScan\\GlobalChatService.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADQAAAAAAAAAAAAgwEAAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-08T19:34:00.598Z",
               "EditorCaption": ""
@@ -45,10 +49,22 @@
               "RelativeDocumentMoniker": "SmartAgroScan\\Soil Test.cs",
               "ToolTip": "F:\\OneDrive - American International University-Bangladesh\\Documents\\Desktop\\C# Project\\Test Project\\SmartAgroScan\\SmartAgroScan\\Soil Test.cs",
               "RelativeToolTip": "SmartAgroScan\\Soil Test.cs",
-              "ViewState": "AgIAAGUAAAAAAAAAAAAwwH8AAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAYwG0AAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-08T19:19:20.73Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Soil Test.cs [Design]",
+              "DocumentMoniker": "F:\\OneDrive - American International University-Bangladesh\\Documents\\Desktop\\C# Project\\Test Project\\SmartAgroScan\\SmartAgroScan\\Soil Test.cs",
+              "RelativeDocumentMoniker": "SmartAgroScan\\Soil Test.cs",
+              "ToolTip": "F:\\OneDrive - American International University-Bangladesh\\Documents\\Desktop\\C# Project\\Test Project\\SmartAgroScan\\SmartAgroScan\\Soil Test.cs [Design]",
+              "RelativeToolTip": "SmartAgroScan\\Soil Test.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T09:02:57.87Z",
+              "EditorCaption": " [Design]"
             }
           ]
         },

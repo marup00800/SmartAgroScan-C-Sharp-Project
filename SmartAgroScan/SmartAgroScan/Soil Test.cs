@@ -50,25 +50,27 @@ namespace SmartAgroScan
             SqlConnection connection = new SqlConnection(connectionString);
             connection.Open();
             string query = @"
-                       SELECT 
-                            p.PlantID,
-                            p.Name,
-                            p.PicturePath,
-                            p.RecommendedSoil,
-                            p.WaterTip,
-                            p.FertilizerTip,
-                            p.HarvestTip
-                        FROM 
-                            dbo.SoilTest AS st
-                        INNER JOIN 
-                            dbo.PlantRecommendation AS pr ON st.TestID = pr.TestID
-                        INNER JOIN 
-                            dbo.Plant AS p ON pr.PlantID = p.PlantID
-                        WHERE 
-                            st.N = @N 
-                            AND st.P = @P 
-                            AND st.K = @K
-                            AND st.Moisture = @Moisture";
+                                SELECT 
+                                    st.TestID,
+                                    p.PlantID,
+                                    p.Name,
+                                    p.PicturePath,
+                                    p.RecommendedSoil,
+                                    p.WaterTip,
+                                    p.FertilizerTip,
+                                    p.HarvestTip
+                                FROM 
+                                    dbo.SoilTest AS st
+                                INNER JOIN 
+                                    dbo.PlantRecommendation AS pr ON st.TestID = pr.TestID
+                                INNER JOIN 
+                                    dbo.Plant AS p ON pr.PlantID = p.PlantID
+                                WHERE 
+                                    st.N = @N 
+                                    AND st.P = @P 
+                                    AND st.K = @K
+                                    AND st.Moisture = @Moisture";
+
             SqlCommand cmd = new SqlCommand(query, connection);
 
             cmd.Parameters.AddWithValue("@N", n);
@@ -84,12 +86,14 @@ namespace SmartAgroScan
             if (dt.Rows.Count > 0)
             {
                 txtSoilCondition.Text = SoilCondition(ph);
-
                 txtRecomendedPlant.Text = dt.Rows[0]["Name"].ToString();
                 txtRecomendedSoil.Text = dt.Rows[0]["RecommendedSoil"].ToString();
                 txtWaterTip.Text = dt.Rows[0]["WaterTip"].ToString();
                 txtFertilizerTip.Text = dt.Rows[0]["FertilizerTip"].ToString();
                 txtHarvestTip.Text = dt.Rows[0]["HarvestTip"].ToString();
+
+                string testId = dt.Rows[0]["TestID"].ToString();
+
 
                 string picturePath = dt.Rows[0]["PicturePath"].ToString();
 
@@ -104,9 +108,21 @@ namespace SmartAgroScan
                     MessageBox.Show("Image file not found: " + fullPath);
                     pictureBoxPlant.Image = null; // Clear the image if not found
                 }
+                
+                //Sotring the result in UserActivity table
+                string query2 = "INSERT INTO UserActivity (UserID, TestID, ActivityType)" +
+                                   "VALUES(@UserID, @TestID, @ActivityType)";
+                SqlCommand cmd2 = new SqlCommand(query2, connection);
+                cmd2.Parameters.AddWithValue("@UserID", userId);
+                cmd2.Parameters.AddWithValue("@TestID", testId);
+                cmd2.Parameters.AddWithValue("@ActivityType", "Recently got result");
+                cmd2.ExecuteNonQuery();
+
+
             }
             else
             {
+                // No matching plant found, Then request data to the admin
                 MessageBox.Show("Sorry, Data is not found.");
 
                 string query2 = "INSERT INTO SoilTestRequest (UserID, N, P, K, pH, Moisture) " +
