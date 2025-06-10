@@ -59,7 +59,7 @@ namespace SmartAgroScan
 
                 soilTestForm.Show();
                 soil_Test_Tutorial.Show();
-                
+
             }
             else
             {
@@ -70,6 +70,11 @@ namespace SmartAgroScan
         }
 
         private void User_Login_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtPassword_TextChanged(object sender, EventArgs e)
         {
 
         }

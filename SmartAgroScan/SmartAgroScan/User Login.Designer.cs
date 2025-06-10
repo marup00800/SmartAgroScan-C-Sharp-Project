@@ -28,9 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(User_Login));
             btnBack = new Button();
-            label3 = new Label();
-            label2 = new Label();
             btnCreateAccount = new Button();
             txtPassword = new TextBox();
             txtUsername = new TextBox();
@@ -39,79 +38,78 @@
             // 
             // btnBack
             // 
-            btnBack.Location = new Point(373, 401);
+            btnBack.BackColor = Color.FromArgb(98, 172, 115);
+            btnBack.FlatStyle = FlatStyle.Popup;
+            btnBack.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
+            btnBack.Location = new Point(1775, 932);
             btnBack.Name = "btnBack";
-            btnBack.Size = new Size(117, 37);
+            btnBack.Size = new Size(107, 42);
             btnBack.TabIndex = 24;
             btnBack.Text = "Back";
-            btnBack.UseVisualStyleBackColor = true;
+            btnBack.UseVisualStyleBackColor = false;
             btnBack.Click += btnBack_Click;
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Location = new Point(82, 137);
-            label3.Name = "label3";
-            label3.Size = new Size(73, 20);
-            label3.TabIndex = 23;
-            label3.Text = "Password:";
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Location = new Point(73, 92);
-            label2.Name = "label2";
-            label2.Size = new Size(82, 20);
-            label2.TabIndex = 22;
-            label2.Text = "Username :";
             // 
             // btnCreateAccount
             // 
-            btnCreateAccount.Location = new Point(142, 269);
+            btnCreateAccount.BackColor = Color.FromArgb(98, 172, 115);
+            btnCreateAccount.FlatStyle = FlatStyle.Popup;
+            btnCreateAccount.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
+            btnCreateAccount.Location = new Point(833, 751);
             btnCreateAccount.Name = "btnCreateAccount";
-            btnCreateAccount.Size = new Size(193, 29);
+            btnCreateAccount.Size = new Size(247, 42);
             btnCreateAccount.TabIndex = 21;
-            btnCreateAccount.Text = "Create Account as User";
-            btnCreateAccount.UseVisualStyleBackColor = true;
+            btnCreateAccount.Text = "Create Account";
+            btnCreateAccount.UseVisualStyleBackColor = false;
             btnCreateAccount.Click += btnCreateAccount_Click;
             // 
             // txtPassword
             // 
-            txtPassword.Location = new Point(161, 137);
+            txtPassword.BackColor = Color.FromArgb(70, 152, 156);
+            txtPassword.BorderStyle = BorderStyle.None;
+            txtPassword.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
+            txtPassword.Location = new Point(919, 529);
             txtPassword.Name = "txtPassword";
             txtPassword.PasswordChar = '*';
-            txtPassword.Size = new Size(161, 27);
+            txtPassword.Size = new Size(255, 32);
             txtPassword.TabIndex = 20;
             // 
             // txtUsername
             // 
-            txtUsername.Location = new Point(161, 89);
+            txtUsername.BackColor = Color.FromArgb(70, 152, 156);
+            txtUsername.BorderStyle = BorderStyle.None;
+            txtUsername.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
+            txtUsername.Location = new Point(919, 451);
             txtUsername.Name = "txtUsername";
-            txtUsername.Size = new Size(161, 27);
+            txtUsername.Size = new Size(255, 32);
             txtUsername.TabIndex = 19;
             // 
             // btnLogin
             // 
-            btnLogin.Location = new Point(179, 198);
+            btnLogin.BackColor = Color.FromArgb(98, 172, 115);
+            btnLogin.FlatStyle = FlatStyle.Popup;
+            btnLogin.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
+            btnLogin.Location = new Point(881, 659);
             btnLogin.Name = "btnLogin";
-            btnLogin.Size = new Size(117, 40);
+            btnLogin.Size = new Size(129, 42);
             btnLogin.TabIndex = 18;
             btnLogin.Text = "Login";
-            btnLogin.UseVisualStyleBackColor = true;
+            btnLogin.UseVisualStyleBackColor = false;
             btnLogin.Click += btnLogin_Click;
             // 
             // User_Login
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(502, 450);
+            BackColor = Color.FromArgb(98, 172, 115);
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImageLayout = ImageLayout.Center;
+            ClientSize = new Size(1918, 1015);
             Controls.Add(btnBack);
-            Controls.Add(label3);
-            Controls.Add(label2);
             Controls.Add(btnCreateAccount);
             Controls.Add(txtPassword);
             Controls.Add(txtUsername);
             Controls.Add(btnLogin);
+            DoubleBuffered = true;
             Name = "User_Login";
             Text = "User_Login";
             Load += User_Login_Load;
@@ -122,8 +120,6 @@
         #endregion
 
         private Button btnBack;
-        private Label label3;
-        private Label label2;
         private Button btnCreateAccount;
         private TextBox txtPassword;
         private TextBox txtUsername;
