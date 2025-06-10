@@ -28,37 +28,49 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             btnAdmin = new Button();
             btnUser = new Button();
             SuspendLayout();
             // 
             // btnAdmin
             // 
-            btnAdmin.Location = new Point(69, 146);
+            btnAdmin.BackColor = Color.FromArgb(130, 212, 216);
+            btnAdmin.FlatStyle = FlatStyle.Popup;
+            btnAdmin.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
+            btnAdmin.ForeColor = Color.FromArgb(7, 67, 73);
+            btnAdmin.Location = new Point(307, 350);
             btnAdmin.Name = "btnAdmin";
-            btnAdmin.Size = new Size(170, 102);
+            btnAdmin.Size = new Size(155, 63);
             btnAdmin.TabIndex = 3;
-            btnAdmin.Text = "Join as ADMIN";
-            btnAdmin.UseVisualStyleBackColor = true;
+            btnAdmin.Text = "ADMIN";
+            btnAdmin.UseVisualStyleBackColor = false;
             btnAdmin.Click += btnAdmin_Click;
             // 
             // btnUser
             // 
-            btnUser.Location = new Point(288, 146);
+            btnUser.BackColor = Color.FromArgb(7, 67, 73);
+            btnUser.FlatStyle = FlatStyle.Popup;
+            btnUser.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnUser.ForeColor = Color.FromArgb(130, 212, 216);
+            btnUser.Location = new Point(561, 351);
             btnUser.Name = "btnUser";
-            btnUser.Size = new Size(170, 102);
+            btnUser.Size = new Size(153, 62);
             btnUser.TabIndex = 2;
-            btnUser.Text = "Join as USER";
-            btnUser.UseVisualStyleBackColor = true;
+            btnUser.Text = "USER";
+            btnUser.UseVisualStyleBackColor = false;
             btnUser.Click += btnUser_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(559, 423);
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImageLayout = ImageLayout.Center;
+            ClientSize = new Size(1037, 705);
             Controls.Add(btnAdmin);
             Controls.Add(btnUser);
+            DoubleBuffered = true;
             Name = "Form1";
             Text = "Form1";
             ResumeLayout(false);

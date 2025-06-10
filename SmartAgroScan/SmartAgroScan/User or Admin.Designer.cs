@@ -67,10 +67,12 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(488, 450);
+            BackgroundImageLayout = ImageLayout.Stretch;
+            ClientSize = new Size(585, 484);
             Controls.Add(btnBack);
             Controls.Add(btnPlantDasboard);
             Controls.Add(btnUserDashboard);
+            DoubleBuffered = true;
             Name = "User_or_Admin";
             Text = "User_or_Admin";
             Load += User_or_Admin_Load;
