@@ -60,7 +60,7 @@
             // 
             // txtN
             // 
-            txtN.BackColor = Color.FromArgb(67, 88, 89);
+            txtN.BackColor = Color.FromArgb(70, 152, 156);
             txtN.BorderStyle = BorderStyle.None;
             txtN.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
             txtN.ForeColor = Color.White;
@@ -72,7 +72,7 @@
             // 
             // txtP
             // 
-            txtP.BackColor = Color.FromArgb(67, 88, 89);
+            txtP.BackColor = Color.FromArgb(70, 152, 156);
             txtP.BorderStyle = BorderStyle.None;
             txtP.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
             txtP.ForeColor = Color.White;
@@ -84,7 +84,7 @@
             // 
             // txtK
             // 
-            txtK.BackColor = Color.FromArgb(67, 88, 89);
+            txtK.BackColor = Color.FromArgb(70, 152, 156);
             txtK.BorderStyle = BorderStyle.None;
             txtK.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
             txtK.ForeColor = Color.White;
@@ -96,7 +96,7 @@
             // 
             // txtPH
             // 
-            txtPH.BackColor = Color.FromArgb(67, 88, 89);
+            txtPH.BackColor = Color.FromArgb(70, 152, 156);
             txtPH.BorderStyle = BorderStyle.None;
             txtPH.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
             txtPH.ForeColor = Color.White;
@@ -108,7 +108,7 @@
             // 
             // txtMoisture
             // 
-            txtMoisture.BackColor = Color.FromArgb(67, 88, 89);
+            txtMoisture.BackColor = Color.FromArgb(70, 152, 156);
             txtMoisture.BorderStyle = BorderStyle.None;
             txtMoisture.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
             txtMoisture.ForeColor = Color.White;
@@ -146,7 +146,7 @@
             // 
             // txtSoilCondition
             // 
-            txtSoilCondition.BackColor = Color.FromArgb(187, 213, 202);
+            txtSoilCondition.BackColor = Color.FromArgb(130, 212, 216);
             txtSoilCondition.BorderStyle = BorderStyle.None;
             txtSoilCondition.Font = new Font("Segoe UI", 16F);
             txtSoilCondition.ForeColor = SystemColors.Window;
@@ -158,7 +158,7 @@
             // 
             // txtRecomendedPlant
             // 
-            txtRecomendedPlant.BackColor = Color.FromArgb(187, 213, 202);
+            txtRecomendedPlant.BackColor = Color.FromArgb(130, 212, 216);
             txtRecomendedPlant.BorderStyle = BorderStyle.None;
             txtRecomendedPlant.Font = new Font("Segoe UI", 16F);
             txtRecomendedPlant.ForeColor = SystemColors.Window;
@@ -170,7 +170,7 @@
             // 
             // txtRecomendedSoil
             // 
-            txtRecomendedSoil.BackColor = Color.FromArgb(187, 213, 202);
+            txtRecomendedSoil.BackColor = Color.FromArgb(130, 212, 216);
             txtRecomendedSoil.BorderStyle = BorderStyle.None;
             txtRecomendedSoil.Font = new Font("Segoe UI", 16F);
             txtRecomendedSoil.ForeColor = SystemColors.Window;
@@ -182,7 +182,7 @@
             // 
             // txtWaterTip
             // 
-            txtWaterTip.BackColor = Color.FromArgb(187, 213, 202);
+            txtWaterTip.BackColor = Color.FromArgb(130, 212, 216);
             txtWaterTip.BorderStyle = BorderStyle.None;
             txtWaterTip.Font = new Font("Segoe UI", 16F);
             txtWaterTip.ForeColor = SystemColors.Window;
@@ -194,7 +194,7 @@
             // 
             // txtFertilizerTip
             // 
-            txtFertilizerTip.BackColor = Color.FromArgb(187, 213, 202);
+            txtFertilizerTip.BackColor = Color.FromArgb(130, 212, 216);
             txtFertilizerTip.BorderStyle = BorderStyle.None;
             txtFertilizerTip.Font = new Font("Segoe UI", 16F);
             txtFertilizerTip.ForeColor = SystemColors.Window;
@@ -205,7 +205,7 @@
             // 
             // txtHarvestTip
             // 
-            txtHarvestTip.BackColor = Color.FromArgb(187, 213, 202);
+            txtHarvestTip.BackColor = Color.FromArgb(130, 212, 216);
             txtHarvestTip.BorderStyle = BorderStyle.None;
             txtHarvestTip.Font = new Font("Segoe UI", 16F);
             txtHarvestTip.ForeColor = SystemColors.Window;
@@ -216,7 +216,7 @@
             // 
             // pictureBoxPlant
             // 
-            pictureBoxPlant.BackColor = Color.FromArgb(67, 88, 89);
+            pictureBoxPlant.BackColor = Color.FromArgb(70, 152, 156);
             pictureBoxPlant.Location = new Point(761, 242);
             pictureBoxPlant.Name = "pictureBoxPlant";
             pictureBoxPlant.Size = new Size(263, 259);
@@ -240,7 +240,7 @@
             // 
             // richTextBoxGlobalChat
             // 
-            richTextBoxGlobalChat.BackColor = Color.FromArgb(67, 88, 89);
+            richTextBoxGlobalChat.BackColor = Color.FromArgb(70, 152, 156);
             richTextBoxGlobalChat.BorderStyle = BorderStyle.None;
             richTextBoxGlobalChat.ForeColor = SystemColors.Window;
             richTextBoxGlobalChat.Location = new Point(1401, 233);
@@ -252,7 +252,7 @@
             // 
             // txtMessage
             // 
-            txtMessage.BackColor = Color.FromArgb(67, 88, 89);
+            txtMessage.BackColor = Color.FromArgb(70, 152, 156);
             txtMessage.BorderStyle = BorderStyle.None;
             txtMessage.Font = new Font("Segoe UI", 16F);
             txtMessage.ForeColor = SystemColors.Window;
@@ -297,7 +297,7 @@
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.Location = new Point(1, -1);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(1919, 986);
+            pictureBox1.Size = new Size(1919, 988);
             pictureBox1.SizeMode = PictureBoxSizeMode.AutoSize;
             pictureBox1.TabIndex = 70;
             pictureBox1.TabStop = false;
@@ -305,10 +305,10 @@
             // pictureBox2
             // 
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(12, 910);
+            pictureBox2.Location = new Point(54, 904);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(122, 66);
-            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox2.Size = new Size(112, 49);
+            pictureBox2.SizeMode = PictureBoxSizeMode.CenterImage;
             pictureBox2.TabIndex = 80;
             pictureBox2.TabStop = false;
             pictureBox2.Click += pictureBox2_Click_1;
@@ -318,7 +318,7 @@
             button1.BackColor = Color.FromArgb(98, 172, 115);
             button1.FlatStyle = FlatStyle.Popup;
             button1.Font = new Font("Segoe UI Emoji", 10.2F, FontStyle.Bold);
-            button1.Location = new Point(16, 927);
+            button1.Location = new Point(54, 913);
             button1.Name = "button1";
             button1.Size = new Size(107, 44);
             button1.TabIndex = 81;
