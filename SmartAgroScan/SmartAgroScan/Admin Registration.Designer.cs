@@ -29,15 +29,15 @@
         private void InitializeComponent()
         {
             btnConfirm = new Button();
-            dateTimePicker1 = new DateTimePicker();
+            dateTimePicker = new DateTimePicker();
             radioButtonAdmin = new RadioButton();
             groupBoxGender = new GroupBox();
             radioButton2 = new RadioButton();
             radioButton3 = new RadioButton();
-            textBox4 = new TextBox();
-            textBox3 = new TextBox();
-            textBox2 = new TextBox();
-            textBox1 = new TextBox();
+            txtAge = new TextBox();
+            txtConfirmPassword = new TextBox();
+            txtPassword = new TextBox();
+            txtUsername = new TextBox();
             txtFullName = new TextBox();
             label8 = new Label();
             label7 = new Label();
@@ -59,13 +59,14 @@
             btnConfirm.TabIndex = 60;
             btnConfirm.Text = "Confirm";
             btnConfirm.UseVisualStyleBackColor = true;
+            btnConfirm.Click += btnConfirm_Click;
             // 
-            // dateTimePicker1
+            // dateTimePicker
             // 
-            dateTimePicker1.Location = new Point(277, 317);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(265, 27);
-            dateTimePicker1.TabIndex = 59;
+            dateTimePicker.Location = new Point(277, 317);
+            dateTimePicker.Name = "dateTimePicker";
+            dateTimePicker.Size = new Size(265, 27);
+            dateTimePicker.TabIndex = 59;
             // 
             // radioButtonAdmin
             // 
@@ -111,33 +112,33 @@
             radioButton3.Text = "Female";
             radioButton3.UseVisualStyleBackColor = true;
             // 
-            // textBox4
+            // txtAge
             // 
-            textBox4.Location = new Point(277, 277);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(180, 27);
-            textBox4.TabIndex = 56;
+            txtAge.Location = new Point(277, 277);
+            txtAge.Name = "txtAge";
+            txtAge.Size = new Size(180, 27);
+            txtAge.TabIndex = 56;
             // 
-            // textBox3
+            // txtConfirmPassword
             // 
-            textBox3.Location = new Point(277, 145);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(180, 27);
-            textBox3.TabIndex = 55;
+            txtConfirmPassword.Location = new Point(277, 145);
+            txtConfirmPassword.Name = "txtConfirmPassword";
+            txtConfirmPassword.Size = new Size(180, 27);
+            txtConfirmPassword.TabIndex = 55;
             // 
-            // textBox2
+            // txtPassword
             // 
-            textBox2.Location = new Point(277, 109);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(180, 27);
-            textBox2.TabIndex = 54;
+            txtPassword.Location = new Point(277, 109);
+            txtPassword.Name = "txtPassword";
+            txtPassword.Size = new Size(180, 27);
+            txtPassword.TabIndex = 54;
             // 
-            // textBox1
+            // txtUsername
             // 
-            textBox1.Location = new Point(277, 70);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(180, 27);
-            textBox1.TabIndex = 53;
+            txtUsername.Location = new Point(277, 70);
+            txtUsername.Name = "txtUsername";
+            txtUsername.Size = new Size(180, 27);
+            txtUsername.TabIndex = 53;
             // 
             // txtFullName
             // 
@@ -234,13 +235,13 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(btnConfirm);
-            Controls.Add(dateTimePicker1);
+            Controls.Add(dateTimePicker);
             Controls.Add(radioButtonAdmin);
             Controls.Add(groupBoxGender);
-            Controls.Add(textBox4);
-            Controls.Add(textBox3);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(txtAge);
+            Controls.Add(txtConfirmPassword);
+            Controls.Add(txtPassword);
+            Controls.Add(txtUsername);
             Controls.Add(txtFullName);
             Controls.Add(label8);
             Controls.Add(label7);
@@ -253,6 +254,7 @@
             Controls.Add(btnBack);
             Name = "Admin_Registration";
             Text = "Admin_Registration";
+            Load += Admin_Registration_Load;
             groupBoxGender.ResumeLayout(false);
             groupBoxGender.PerformLayout();
             ResumeLayout(false);
@@ -262,15 +264,15 @@
         #endregion
 
         private Button btnConfirm;
-        private DateTimePicker dateTimePicker1;
+        private DateTimePicker dateTimePicker;
         private RadioButton radioButtonAdmin;
         private GroupBox groupBoxGender;
         private RadioButton radioButton2;
         private RadioButton radioButton3;
-        private TextBox textBox4;
-        private TextBox textBox3;
-        private TextBox textBox2;
-        private TextBox textBox1;
+        private TextBox txtAge;
+        private TextBox txtConfirmPassword;
+        private TextBox txtPassword;
+        private TextBox txtUsername;
         private TextBox txtFullName;
         private Label label8;
         private Label label7;

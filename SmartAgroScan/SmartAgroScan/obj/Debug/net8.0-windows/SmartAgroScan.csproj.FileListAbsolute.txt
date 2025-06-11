@@ -17,10 +17,6 @@ F:\OneDrive - American International University-Bangladesh\Documents\Desktop\C# 
 F:\OneDrive - American International University-Bangladesh\Documents\Desktop\C# Project\Test Project\SmartAgroScan\SmartAgroScan\obj\Debug\net8.0-windows\SmartAgroScan.pdb
 F:\OneDrive - American International University-Bangladesh\Documents\Desktop\C# Project\Test Project\SmartAgroScan\SmartAgroScan\obj\Debug\net8.0-windows\SmartAgroScan.genruntimeconfig.cache
 F:\OneDrive - American International University-Bangladesh\Documents\Desktop\C# Project\Test Project\SmartAgroScan\SmartAgroScan\obj\Debug\net8.0-windows\ref\SmartAgroScan.dll
-F:\OneDrive - American International University-Bangladesh\Documents\Desktop\C# Project\Test Project\SmartAgroScan\SmartAgroScan\obj\Debug\net8.0-windows\SmartAgroScan.User_Table.resources
-F:\OneDrive - American International University-Bangladesh\Documents\Desktop\C# Project\Test Project\SmartAgroScan\SmartAgroScan\obj\Debug\net8.0-windows\SmartAgroScan.User_or_Admin.resources
-F:\OneDrive - American International University-Bangladesh\Documents\Desktop\C# Project\Test Project\SmartAgroScan\SmartAgroScan\obj\Debug\net8.0-windows\SmartAgroScan.User_Dashboard.resources
-F:\OneDrive - American International University-Bangladesh\Documents\Desktop\C# Project\Test Project\SmartAgroScan\SmartAgroScan\obj\Debug\net8.0-windows\SmartAgroScan.Plant_Dashboard.resources
 F:\OneDrive - American International University-Bangladesh\Documents\Desktop\C# Project\Test Project\SmartAgroScan\SmartAgroScan\bin\Debug\net8.0-windows\Azure.Core.dll
 F:\OneDrive - American International University-Bangladesh\Documents\Desktop\C# Project\Test Project\SmartAgroScan\SmartAgroScan\bin\Debug\net8.0-windows\Azure.Identity.dll
 F:\OneDrive - American International University-Bangladesh\Documents\Desktop\C# Project\Test Project\SmartAgroScan\SmartAgroScan\bin\Debug\net8.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
@@ -72,5 +68,6 @@ F:\OneDrive - American International University-Bangladesh\Documents\Desktop\C# 
 F:\OneDrive - American International University-Bangladesh\Documents\Desktop\C# Project\Test Project\SmartAgroScan\SmartAgroScan\obj\Debug\net8.0-windows\SmartAgroScan.User_Registration.resources
 F:\OneDrive - American International University-Bangladesh\Documents\Desktop\C# Project\Test Project\SmartAgroScan\SmartAgroScan\obj\Debug\net8.0-windows\SmartAgroScan.Soil_Test.resources
 F:\OneDrive - American International University-Bangladesh\Documents\Desktop\C# Project\Test Project\SmartAgroScan\SmartAgroScan\obj\Debug\net8.0-windows\SmartAgroScan.Properties.Resources.resources
-F:\OneDrive - American International University-Bangladesh\Documents\Desktop\C# Project\Test Project\SmartAgroScan\SmartAgroScan\obj\Debug\net8.0-windows\SmartAgroScan.Admin_Dashboard.resources
 F:\OneDrive - American International University-Bangladesh\Documents\Desktop\C# Project\Test Project\SmartAgroScan\SmartAgroScan\obj\Debug\net8.0-windows\SmartAgroScan.Soil_Test_Tutorial.resources
+F:\OneDrive - American International University-Bangladesh\Documents\Desktop\C# Project\Test Project\SmartAgroScan\SmartAgroScan\obj\Debug\net8.0-windows\SmartAgroScan.Admin_Control_Panel.resources
+F:\OneDrive - American International University-Bangladesh\Documents\Desktop\C# Project\Test Project\SmartAgroScan\SmartAgroScan\obj\Debug\net8.0-windows\SmartAgroScan.User_Management.resources
