@@ -30,6 +30,7 @@
         {
             button1 = new Button();
             button2 = new Button();
+            btnBack = new Button();
             SuspendLayout();
             // 
             // button1
@@ -51,11 +52,22 @@
             button2.Text = "PlantManagementForm";
             button2.UseVisualStyleBackColor = true;
             // 
+            // btnBack
+            // 
+            btnBack.Location = new Point(617, 349);
+            btnBack.Name = "btnBack";
+            btnBack.Size = new Size(105, 38);
+            btnBack.TabIndex = 44;
+            btnBack.Text = "Back";
+            btnBack.UseVisualStyleBackColor = true;
+            btnBack.Click += btnBack_Click;
+            // 
             // Admin_Control_Panel
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(871, 495);
+            Controls.Add(btnBack);
             Controls.Add(button2);
             Controls.Add(button1);
             Name = "Admin_Control_Panel";
@@ -68,5 +80,6 @@
 
         private Button button1;
         private Button button2;
+        private Button btnBack;
     }
 }

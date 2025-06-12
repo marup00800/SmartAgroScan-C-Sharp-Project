@@ -114,6 +114,7 @@
             Controls.Add(btnLogin);
             Name = "Admin_Login";
             Text = "Admin_Login";
+            Load += Admin_Login_Load;
             ResumeLayout(false);
             PerformLayout();
         }

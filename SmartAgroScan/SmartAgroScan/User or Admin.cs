@@ -27,9 +27,7 @@ namespace SmartAgroScan
 
         private void btnUser_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            User_Dashboard userDashboard = new User_Dashboard();
-            userDashboard.ShowDialog();
+            
         }
 
         private void User_or_Admin_Load(object sender, EventArgs e)

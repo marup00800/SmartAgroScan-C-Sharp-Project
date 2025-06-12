@@ -13,6 +13,9 @@ namespace SmartAgroScan
 {
     public partial class User_Login : Form
     {
+
+        string connectionString = @"Data Source=DESKTOP-FGFOKG6;Initial Catalog=PlantTest;Integrated Security=True;Trust Server Certificate=True";
+
         public User_Login()
         {
             InitializeComponent();
@@ -40,7 +43,6 @@ namespace SmartAgroScan
             string username = txtUsername.Text;
             string password = txtPassword.Text;
 
-            string connectionString = @"Data Source=DESKTOP-FGFOKG6;Initial Catalog=PlantTest;Integrated Security=True;Trust Server Certificate=True";
             SqlConnection connection = new SqlConnection(connectionString);
             connection.Open();
             string query = "SELECT UserID FROM Users WHERE Username = @Username AND Password = @Password";

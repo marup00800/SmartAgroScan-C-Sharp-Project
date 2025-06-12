@@ -15,6 +15,7 @@ namespace SmartAgroScan
         public Admin_Control_Panel()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterScreen;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -28,7 +29,15 @@ namespace SmartAgroScan
 
         private void Admin_Control_Panel_Load(object sender, EventArgs e)
         {
-            
+
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Admin_Login adminLogin = new Admin_Login();
+            adminLogin.ShowDialog();
+
         }
     }
 }

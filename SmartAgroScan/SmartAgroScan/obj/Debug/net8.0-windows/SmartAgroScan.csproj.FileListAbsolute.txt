@@ -150,3 +150,6 @@ C:\Users\USER\Desktop\SmartAgroScan-C-Sharp-Project\SmartAgroScan\SmartAgroScan\
 C:\Users\USER\Desktop\SmartAgroScan-C-Sharp-Project\SmartAgroScan\SmartAgroScan\obj\Debug\net8.0-windows\SmartAgroScan.pdb
 C:\Users\USER\Desktop\SmartAgroScan-C-Sharp-Project\SmartAgroScan\SmartAgroScan\obj\Debug\net8.0-windows\SmartAgroScan.genruntimeconfig.cache
 C:\Users\USER\Desktop\SmartAgroScan-C-Sharp-Project\SmartAgroScan\SmartAgroScan\obj\Debug\net8.0-windows\ref\SmartAgroScan.dll
+F:\OneDrive - American International University-Bangladesh\Documents\Desktop\C# Project\Test Project\SmartAgroScan\SmartAgroScan\obj\Debug\net8.0-windows\SmartAgroScan.Plant_Dashboard.resources
+F:\OneDrive - American International University-Bangladesh\Documents\Desktop\C# Project\Test Project\SmartAgroScan\SmartAgroScan\obj\Debug\net8.0-windows\SmartAgroScan.User_or_Admin.resources
+F:\OneDrive - American International University-Bangladesh\Documents\Desktop\C# Project\Test Project\SmartAgroScan\SmartAgroScan\obj\Debug\net8.0-windows\SmartAgroScan.User_Table.resources

@@ -13,6 +13,8 @@ namespace SmartAgroScan
 {
     public partial class User_Registration : Form
     {
+        string connectionString = @"Data Source = MARUP ;Initial Catalog=PlantTest;Integrated Security=True;Trust Server Certificate=True";
+
         public User_Registration()
         {
             InitializeComponent();
@@ -37,7 +39,6 @@ namespace SmartAgroScan
             string gender = groupBoxGender.Controls.OfType<RadioButton>()
                 .First(r => r.Checked).Text;
 
-            string connectionString = @"Data Source=DESKTOP-FGFOKG6;Initial Catalog=PlantTest;Integrated Security=True;Trust Server Certificate=True";
             SqlConnection connection = new SqlConnection(connectionString);
             connection.Open();
             string query = "INSERT INTO Users (FullName, Username, Password, Gender, Role, Age, DOB) " +

@@ -13,8 +13,12 @@ using Microsoft.Data.SqlClient;
 namespace SmartAgroScan
 {
 
+
     public partial class Soil_Test : Form
     {
+
+        string connectionString = @"Data Source=DESKTOP-FGFOKG6;Initial Catalog=PlantTest;Integrated Security=True;Trust Server Certificate=True";
+
         private string userName; // This is the username of the logged-in user
         private int userId; // This is the user ID of the logged-in user
         private GlobalChatService chatService; // This is the chat service instance for global chat functionality
@@ -46,7 +50,6 @@ namespace SmartAgroScan
             double ph = double.Parse(txtPH.Text);
             double moisture = double.Parse(txtMoisture.Text);
 
-            string connectionString = @"Data Source=DESKTOP-FGFOKG6;Initial Catalog=PlantTest;Integrated Security=True;Trust Server Certificate=True";
             SqlConnection connection = new SqlConnection(connectionString);
             connection.Open();
             string query = @"

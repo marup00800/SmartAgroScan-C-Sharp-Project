@@ -14,6 +14,8 @@ namespace SmartAgroScan
 {
     public partial class Admin_Registration : Form
     {
+
+        string connectionString = @"Data Source=Marup;Initial Catalog=PlantTest;Integrated Security=True;Trust Server Certificate=True";
         public Admin_Registration()
         {
             InitializeComponent();
@@ -30,7 +32,7 @@ namespace SmartAgroScan
         private void btnConfirm_Click(object sender, EventArgs e)
         {
 
-            string connectionString = @"Data Source=DESKTOP-FGFOKG6;Initial Catalog=PlantTest;Integrated Security=True;Trust Server Certificate=True";
+            
             SqlConnection connection = new SqlConnection(connectionString);
             connection.Open();
             string query = "INSERT INTO Users (FullName, Username, Password, Gender, Role, Age, DOB) " +

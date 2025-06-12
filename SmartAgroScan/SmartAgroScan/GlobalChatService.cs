@@ -9,6 +9,7 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 namespace SmartAgroScan
 {
+
     internal class GlobalChatService
     {
 

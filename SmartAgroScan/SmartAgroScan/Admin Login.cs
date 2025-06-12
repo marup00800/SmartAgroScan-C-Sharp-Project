@@ -33,10 +33,15 @@ namespace SmartAgroScan
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
-        {   
+        {
             this.Hide();
             Admin_Control_Panel admin_Control_Panel = new Admin_Control_Panel();
             admin_Control_Panel.ShowDialog();
+
+        }
+
+        private void Admin_Login_Load(object sender, EventArgs e)
+        {
 
         }
     }
