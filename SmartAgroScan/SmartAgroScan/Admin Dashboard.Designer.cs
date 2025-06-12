@@ -36,17 +36,19 @@
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(34, 41);
+            dataGridView1.Location = new Point(42, 51);
+            dataGridView1.Margin = new Padding(4, 4, 4, 4);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(1222, 245);
+            dataGridView1.Size = new Size(1528, 306);
             dataGridView1.TabIndex = 1;
             // 
             // btnBack
             // 
-            btnBack.Location = new Point(1167, 487);
+            btnBack.Location = new Point(1459, 609);
+            btnBack.Margin = new Padding(4, 4, 4, 4);
             btnBack.Name = "btnBack";
-            btnBack.Size = new Size(117, 37);
+            btnBack.Size = new Size(146, 46);
             btnBack.TabIndex = 19;
             btnBack.Text = "Back";
             btnBack.UseVisualStyleBackColor = true;
@@ -54,13 +56,15 @@
             // 
             // Admin_Dashboard
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1296, 536);
+            ClientSize = new Size(1620, 670);
             Controls.Add(btnBack);
             Controls.Add(dataGridView1);
+            Margin = new Padding(4, 4, 4, 4);
             Name = "Admin_Dashboard";
             Text = "Admin_Dashboard";
+            Load += Admin_Dashboard_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
         }

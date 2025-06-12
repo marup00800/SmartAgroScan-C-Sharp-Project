@@ -40,7 +40,7 @@ namespace SmartAgroScan
             string username = txtUsername.Text;
             string password = txtPassword.Text;
 
-            string connectionString = @"Data Source=MARUP;Initial Catalog=PlantTest;Integrated Security=True;Trust Server Certificate=True";
+            string connectionString = @"Data Source=DESKTOP-FGFOKG6;Initial Catalog=PlantTest;Integrated Security=True;Trust Server Certificate=True";
             SqlConnection connection = new SqlConnection(connectionString);
             connection.Open();
             string query = "SELECT UserID FROM Users WHERE Username = @Username AND Password = @Password";

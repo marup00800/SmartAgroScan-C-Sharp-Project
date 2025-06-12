@@ -23,5 +23,10 @@ namespace SmartAgroScan
             User_or_Admin userOrAdmin = new User_or_Admin();
             userOrAdmin.ShowDialog();
         }
+
+        private void Admin_Dashboard_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

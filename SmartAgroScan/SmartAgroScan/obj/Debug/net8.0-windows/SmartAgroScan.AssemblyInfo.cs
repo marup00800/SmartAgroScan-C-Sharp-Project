@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SmartAgroScan")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cedade0543e658d692490474fb6cdbd7b8545e4b")]
 [assembly: System.Reflection.AssemblyProductAttribute("SmartAgroScan")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SmartAgroScan")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
