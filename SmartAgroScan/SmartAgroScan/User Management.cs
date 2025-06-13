@@ -21,13 +21,18 @@ namespace SmartAgroScan
             this.StartPosition = FormStartPosition.CenterScreen;
         }
 
-        /////////////////////////////////////////////// User Tab ////////////////////////////////////////////////
+
 
         private void User_Management_Load(object sender, EventArgs e)
         {
             LoadData();
             LoadUserActivityData();
+            LoadGlobalChatData();
+
         }
+
+
+        ///////////////////////////////////////////////////////////////////////////// User Tab ////////////////////////////////////////////////
         private void clear()
         {
 
@@ -245,7 +250,7 @@ namespace SmartAgroScan
 
 
 
-        /////////////////////////////////////////////// User Activity Tab ////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////// User Activity Tab ////////////////////////////////////////////////
 
 
         public void userActivityClear()
@@ -255,7 +260,9 @@ namespace SmartAgroScan
             txtTestId.Text = "";
             txtActivityType.Text = "";
             txtActivityTime.Text = "";
-            txtSearch2.Text = "";   
+            txtSearch2.Text = "";
+            txtSearch3.Text = "";
+            txtSearch4.Text = "";
         }
 
         public void LoadUserActivityData()
@@ -271,6 +278,19 @@ namespace SmartAgroScan
             dataGridView1.AutoGenerateColumns = true; // Allow the DataGridView to automatically generate columns based on the DataTable
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill; // 🟢 Make columns stretch to fill the view
             dataGridView1.DataSource = dt; // Set the DataSource of the DataGridView to the DataTable
+
+
+            SqlConnection connection = new SqlConnection(connectionString);
+            connection.Open();
+            string query2 = "SELECT * FROM SoilTestRequest";
+            SqlCommand command = new SqlCommand(query2, connection);
+            SqlDataAdapter adapter = new SqlDataAdapter(command);
+            DataSet dataSet = new DataSet();
+            adapter.Fill(dataSet);
+            DataTable dataTable = dataSet.Tables[0];
+            dataGridView2.AutoGenerateColumns = true; // Automatically generate columns based on the data source
+            dataGridView2.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridView2.DataSource = dataTable; // Set the DataSource of the DataGridView to the DataTable
         }
 
         private void dataGridView1_CellContentClick_3(object sender, DataGridViewCellEventArgs e)
@@ -290,6 +310,7 @@ namespace SmartAgroScan
             txtTestId.Text = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
             txtActivityType.Text = dataGridView1.Rows[e.RowIndex].Cells[3].Value.ToString();
             txtActivityTime.Text = dataGridView1.Rows[e.RowIndex].Cells[4].Value.ToString();
+            txtSearch4.Text = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
 
         }
 
@@ -374,7 +395,7 @@ namespace SmartAgroScan
             MessageBox.Show("User activity deleted successfully.");
             LoadUserActivityData();
             userActivityClear();
-        }        
+        }
 
 
         private void btnSearch2_Click(object sender, EventArgs e)
@@ -392,15 +413,152 @@ namespace SmartAgroScan
 
         }
 
+
+        private void btnSearch3_Click(object sender, EventArgs e)
+        {
+
+            SqlConnection connection = new SqlConnection(connectionString);
+            connection.Open();
+            string query = "SELECT * FROM SoilTestRequest WHERE RequestID LIKE '" + txtSearch3.Text + "'";
+            SqlCommand cmd = new SqlCommand(query, connection);
+            SqlDataAdapter adp = new SqlDataAdapter(cmd);
+            DataSet ds = new DataSet();
+            adp.Fill(ds);
+            DataTable dt = ds.Tables[0];
+            dataGridView2.AutoGenerateColumns = true;
+            dataGridView2.DataSource = dt;
+
+        }
+
+
+        private void btnSearch4_Click(object sender, EventArgs e)
+        {
+            SqlConnection connection = new SqlConnection(connectionString);
+            connection.Open();
+            string query = "SELECT * FROM SoilTestRequest WHERE UserID LIKE '" + txtSearch4.Text + "'";
+            SqlCommand cmd = new SqlCommand(query, connection);
+            SqlDataAdapter adp = new SqlDataAdapter(cmd);
+            DataSet ds = new DataSet();
+            adp.Fill(ds);
+            DataTable dt = ds.Tables[0];
+            dataGridView2.AutoGenerateColumns = true;
+            dataGridView2.DataSource = dt;
+        }
         private void btnClear2_Click(object sender, EventArgs e)
         {
             userActivityClear();
             LoadUserActivityData();
         }
 
+        private void btnSoilTestRequest_Click(object sender, EventArgs e)
+        {
+            Soil_Test_Request soilTestRequestForm = new Soil_Test_Request();
+            soilTestRequestForm.ShowDialog();
+        }
+
+        private void btnBack2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Admin_Control_Panel adminControlPanelForm = new Admin_Control_Panel();
+            adminControlPanelForm.ShowDialog();
+
+        }
 
 
+        ////////////////////////////////////////////////////////////////////////// Global Chat Tab //////////////////////////////////////////////////////////
 
+        public void clearGlobalChat()
+        {
+            txtSearch5.Text = "";
+            txtSearch6.Text = "";
+        }
+
+        private void btnClear3_Click(object sender, EventArgs e)
+        {
+            clearGlobalChat();
+        }
+        public void LoadGlobalChatData()
+        {
+            SqlConnection connection = new SqlConnection(connectionString);
+            connection.Open();
+            string query = "SELECT * FROM GlobalChat";
+            SqlCommand command = new SqlCommand(query, connection);
+            SqlDataAdapter adapter = new SqlDataAdapter(command);
+            DataSet dataSet = new DataSet();
+            adapter.Fill(dataSet);
+            DataTable dataTable = dataSet.Tables[0];
+            dataGridView4.AutoGenerateColumns = true; // Automatically generate columns based on the data source
+            dataGridView4.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill; // Make columns stretch to fill the view
+            dataGridView4.DataSource = dataTable; // Set the DataSource of the DataGridView to the DataTable
+        }
+
+        private void btnSearch6_Click(object sender, EventArgs e)
+        {
+            SqlConnection connection = new SqlConnection(connectionString);
+            connection.Open();
+            string query = "SELECT * FROM GlobalChat WHERE UserID LIKE '" + txtSearch6.Text + "'";
+            SqlCommand cmd = new SqlCommand(query, connection);
+            SqlDataAdapter adp = new SqlDataAdapter(cmd);
+            DataSet ds = new DataSet();
+            adp.Fill(ds);
+            DataTable dt = ds.Tables[0];
+            dataGridView4.AutoGenerateColumns = true;
+            dataGridView4.DataSource = dt;
+
+        }
+
+        private void btnSearch5_Click(object sender, EventArgs e)
+        {
+            SqlConnection connection = new SqlConnection(connectionString);
+            connection.Open();
+            string query = "SELECT * FROM GlobalChat WHERE Message LIKE '%" + txtSearch5.Text + "%'";
+            SqlCommand cmd = new SqlCommand(query, connection);
+            SqlDataAdapter adp = new SqlDataAdapter(cmd);
+            DataSet ds = new DataSet();
+            adp.Fill(ds);
+            DataTable dt = ds.Tables[0];
+            dataGridView4.AutoGenerateColumns = true;
+            dataGridView4.DataSource = dt;
+
+        }
+
+        private void btnDelete3_Click(object sender, EventArgs e)
+        {
+            SqlConnection connection = new SqlConnection(connectionString);
+            connection.Open();
+            string query = "DELETE FROM GlobalChat WHERE ChatID = @ChatID";
+            SqlCommand cmd = new SqlCommand(query, connection);
+
+
+        }
+
+        private void dataGridView3_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+            try
+            {
+                if (e.RowIndex < 0) return;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error selecting row: " + ex.Message);
+                return;
+            }
+            txtSearch5.Text = dataGridView4.Rows[e.RowIndex].Cells[0].Value.ToString();
+            txtSearch6.Text = dataGridView4.Rows[e.RowIndex].Cells[4].Value.ToString();
+
+
+        }
+
+        private void btnBack3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Admin_Control_Panel adminControlPanelForm = new Admin_Control_Panel();
+            adminControlPanelForm.ShowDialog();
+
+        }
+
+       
         private void tabPage1_Click(object sender, EventArgs e)
         {
 
@@ -428,6 +586,6 @@ namespace SmartAgroScan
 
         }
 
-        
+       
     }
 }

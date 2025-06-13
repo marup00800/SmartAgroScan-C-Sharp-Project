@@ -55,6 +55,15 @@
             btnInsert = new Button();
             btnBack = new Button();
             tabPageUserActivity = new TabPage();
+            btnBack2 = new Button();
+            label16 = new Label();
+            label15 = new Label();
+            label14 = new Label();
+            txtSearch4 = new TextBox();
+            btnSearch4 = new Button();
+            txtSearch3 = new TextBox();
+            btnSearch3 = new Button();
+            dataGridView2 = new DataGridView();
             dataGridView1 = new DataGridView();
             label9 = new Label();
             label10 = new Label();
@@ -72,18 +81,30 @@
             btnClear2 = new Button();
             btnUpdate2 = new Button();
             btnInsert2 = new Button();
-            tabPage3 = new TabPage();
+            tabPageGlobalChat = new TabPage();
+            btnBack3 = new Button();
+            btnDelete3 = new Button();
+            btnClear3 = new Button();
+            label17 = new Label();
+            txtSearch6 = new TextBox();
+            btnSearch6 = new Button();
+            txtSearch5 = new TextBox();
+            btnSearch5 = new Button();
+            dataGridView4 = new DataGridView();
             ((System.ComponentModel.ISupportInitialize)dataGridViewUser).BeginInit();
             tabControl1.SuspendLayout();
             tabPageUser.SuspendLayout();
             tabPageUserActivity.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            tabPageGlobalChat.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView4).BeginInit();
             SuspendLayout();
             // 
             // dataGridViewUser
             // 
             dataGridViewUser.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewUser.Location = new Point(49, 142);
+            dataGridViewUser.Location = new Point(26, 102);
             dataGridViewUser.Name = "dataGridViewUser";
             dataGridViewUser.RowHeadersWidth = 51;
             dataGridViewUser.Size = new Size(1066, 291);
@@ -94,7 +115,7 @@
             // 
             tabControl1.Controls.Add(tabPageUser);
             tabControl1.Controls.Add(tabPageUserActivity);
-            tabControl1.Controls.Add(tabPage3);
+            tabControl1.Controls.Add(tabPageGlobalChat);
             tabControl1.Font = new Font("Segoe UI", 10F);
             tabControl1.Location = new Point(2, 12);
             tabControl1.Name = "tabControl1";
@@ -356,6 +377,15 @@
             // 
             // tabPageUserActivity
             // 
+            tabPageUserActivity.Controls.Add(btnBack2);
+            tabPageUserActivity.Controls.Add(label16);
+            tabPageUserActivity.Controls.Add(label15);
+            tabPageUserActivity.Controls.Add(label14);
+            tabPageUserActivity.Controls.Add(txtSearch4);
+            tabPageUserActivity.Controls.Add(btnSearch4);
+            tabPageUserActivity.Controls.Add(txtSearch3);
+            tabPageUserActivity.Controls.Add(btnSearch3);
+            tabPageUserActivity.Controls.Add(dataGridView2);
             tabPageUserActivity.Controls.Add(dataGridView1);
             tabPageUserActivity.Controls.Add(label9);
             tabPageUserActivity.Controls.Add(label10);
@@ -383,10 +413,99 @@
             tabPageUserActivity.UseVisualStyleBackColor = true;
             tabPageUserActivity.Click += tabPageUserActivity_Click;
             // 
+            // btnBack2
+            // 
+            btnBack2.BackColor = Color.DarkGray;
+            btnBack2.FlatStyle = FlatStyle.Popup;
+            btnBack2.Font = new Font("Segoe UI Emoji", 10.2F, FontStyle.Bold);
+            btnBack2.Location = new Point(1228, 643);
+            btnBack2.Name = "btnBack2";
+            btnBack2.Size = new Size(94, 36);
+            btnBack2.TabIndex = 111;
+            btnBack2.Text = "Back";
+            btnBack2.UseVisualStyleBackColor = false;
+            btnBack2.Click += btnBack2_Click;
+            // 
+            // label16
+            // 
+            label16.AutoSize = true;
+            label16.Location = new Point(309, 483);
+            label16.Name = "label16";
+            label16.Size = new Size(175, 30);
+            label16.TabIndex = 110;
+            label16.Text = "Soil Test Request";
+            // 
+            // label15
+            // 
+            label15.AutoSize = true;
+            label15.Location = new Point(309, 63);
+            label15.Name = "label15";
+            label15.Size = new Size(133, 30);
+            label15.TabIndex = 109;
+            label15.Text = "User Activity";
+            // 
+            // label14
+            // 
+            label14.AutoSize = true;
+            label14.Location = new Point(321, 834);
+            label14.Name = "label14";
+            label14.Size = new Size(179, 30);
+            label14.TabIndex = 108;
+            label14.Text = "Search by useID :";
+            // 
+            // txtSearch4
+            // 
+            txtSearch4.Location = new Point(506, 831);
+            txtSearch4.Name = "txtSearch4";
+            txtSearch4.Size = new Size(191, 36);
+            txtSearch4.TabIndex = 107;
+            // 
+            // btnSearch4
+            // 
+            btnSearch4.BackColor = Color.DarkGray;
+            btnSearch4.FlatStyle = FlatStyle.Popup;
+            btnSearch4.Font = new Font("Segoe UI Emoji", 10.2F, FontStyle.Bold);
+            btnSearch4.Location = new Point(537, 873);
+            btnSearch4.Name = "btnSearch4";
+            btnSearch4.Size = new Size(160, 36);
+            btnSearch4.TabIndex = 106;
+            btnSearch4.Text = "Search by ID";
+            btnSearch4.UseVisualStyleBackColor = false;
+            btnSearch4.Click += btnSearch4_Click;
+            // 
+            // txtSearch3
+            // 
+            txtSearch3.Location = new Point(742, 831);
+            txtSearch3.Name = "txtSearch3";
+            txtSearch3.Size = new Size(191, 36);
+            txtSearch3.TabIndex = 105;
+            // 
+            // btnSearch3
+            // 
+            btnSearch3.BackColor = Color.DarkGray;
+            btnSearch3.FlatStyle = FlatStyle.Popup;
+            btnSearch3.Font = new Font("Segoe UI Emoji", 10.2F, FontStyle.Bold);
+            btnSearch3.Location = new Point(773, 873);
+            btnSearch3.Name = "btnSearch3";
+            btnSearch3.Size = new Size(160, 36);
+            btnSearch3.TabIndex = 104;
+            btnSearch3.Text = "Search by ID";
+            btnSearch3.UseVisualStyleBackColor = false;
+            btnSearch3.Click += btnSearch3_Click;
+            // 
+            // dataGridView2
+            // 
+            dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView2.Location = new Point(6, 516);
+            dataGridView2.Name = "dataGridView2";
+            dataGridView2.RowHeadersWidth = 51;
+            dataGridView2.Size = new Size(927, 298);
+            dataGridView2.TabIndex = 103;
+            // 
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(6, 94);
+            dataGridView1.Location = new Point(6, 96);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.Size = new Size(1164, 315);
@@ -478,7 +597,7 @@
             btnDelete2.BackColor = Color.DarkGray;
             btnDelete2.FlatStyle = FlatStyle.Popup;
             btnDelete2.Font = new Font("Segoe UI Emoji", 10.2F, FontStyle.Bold);
-            btnDelete2.Location = new Point(693, 655);
+            btnDelete2.Location = new Point(467, 419);
             btnDelete2.Name = "btnDelete2";
             btnDelete2.Size = new Size(94, 36);
             btnDelete2.TabIndex = 90;
@@ -488,7 +607,7 @@
             // 
             // txtSearch2
             // 
-            txtSearch2.Location = new Point(861, 630);
+            txtSearch2.Location = new Point(979, 417);
             txtSearch2.Name = "txtSearch2";
             txtSearch2.Size = new Size(191, 36);
             txtSearch2.TabIndex = 89;
@@ -498,7 +617,7 @@
             btnSearch2.BackColor = Color.DarkGray;
             btnSearch2.FlatStyle = FlatStyle.Popup;
             btnSearch2.Font = new Font("Segoe UI Emoji", 10.2F, FontStyle.Bold);
-            btnSearch2.Location = new Point(891, 677);
+            btnSearch2.Location = new Point(1010, 459);
             btnSearch2.Name = "btnSearch2";
             btnSearch2.Size = new Size(160, 36);
             btnSearch2.TabIndex = 88;
@@ -511,7 +630,7 @@
             btnClear2.BackColor = Color.DarkGray;
             btnClear2.FlatStyle = FlatStyle.Popup;
             btnClear2.Font = new Font("Segoe UI Emoji", 10.2F, FontStyle.Bold);
-            btnClear2.Location = new Point(646, 503);
+            btnClear2.Location = new Point(603, 419);
             btnClear2.Name = "btnClear2";
             btnClear2.Size = new Size(94, 36);
             btnClear2.TabIndex = 87;
@@ -524,7 +643,7 @@
             btnUpdate2.BackColor = Color.DarkGray;
             btnUpdate2.FlatStyle = FlatStyle.Popup;
             btnUpdate2.Font = new Font("Segoe UI Emoji", 10.2F, FontStyle.Bold);
-            btnUpdate2.Location = new Point(900, 503);
+            btnUpdate2.Location = new Point(857, 419);
             btnUpdate2.Name = "btnUpdate2";
             btnUpdate2.Size = new Size(94, 36);
             btnUpdate2.TabIndex = 86;
@@ -537,7 +656,7 @@
             btnInsert2.BackColor = Color.DarkGray;
             btnInsert2.FlatStyle = FlatStyle.Popup;
             btnInsert2.Font = new Font("Segoe UI Emoji", 10.2F, FontStyle.Bold);
-            btnInsert2.Location = new Point(772, 503);
+            btnInsert2.Location = new Point(729, 419);
             btnInsert2.Name = "btnInsert2";
             btnInsert2.Size = new Size(94, 36);
             btnInsert2.TabIndex = 85;
@@ -545,17 +664,124 @@
             btnInsert2.UseVisualStyleBackColor = false;
             btnInsert2.Click += btnInsert2_Click;
             // 
-            // tabPage3
+            // tabPageGlobalChat
             // 
-            tabPage3.Font = new Font("Segoe UI", 13F);
-            tabPage3.Location = new Point(4, 32);
-            tabPage3.Name = "tabPage3";
-            tabPage3.Padding = new Padding(3);
-            tabPage3.Size = new Size(1917, 1009);
-            tabPage3.TabIndex = 2;
-            tabPage3.Text = "tabPage3";
-            tabPage3.UseVisualStyleBackColor = true;
-            tabPage3.Click += tabPage3_Click;
+            tabPageGlobalChat.Controls.Add(btnBack3);
+            tabPageGlobalChat.Controls.Add(btnDelete3);
+            tabPageGlobalChat.Controls.Add(btnClear3);
+            tabPageGlobalChat.Controls.Add(label17);
+            tabPageGlobalChat.Controls.Add(txtSearch6);
+            tabPageGlobalChat.Controls.Add(btnSearch6);
+            tabPageGlobalChat.Controls.Add(txtSearch5);
+            tabPageGlobalChat.Controls.Add(btnSearch5);
+            tabPageGlobalChat.Controls.Add(dataGridView4);
+            tabPageGlobalChat.Font = new Font("Segoe UI", 13F);
+            tabPageGlobalChat.Location = new Point(4, 32);
+            tabPageGlobalChat.Name = "tabPageGlobalChat";
+            tabPageGlobalChat.Padding = new Padding(3);
+            tabPageGlobalChat.Size = new Size(1917, 1009);
+            tabPageGlobalChat.TabIndex = 2;
+            tabPageGlobalChat.Text = "Global Chat";
+            tabPageGlobalChat.UseVisualStyleBackColor = true;
+            tabPageGlobalChat.Click += tabPage3_Click;
+            // 
+            // btnBack3
+            // 
+            btnBack3.BackColor = Color.DarkGray;
+            btnBack3.FlatStyle = FlatStyle.Popup;
+            btnBack3.Font = new Font("Segoe UI Emoji", 10.2F, FontStyle.Bold);
+            btnBack3.Location = new Point(899, 817);
+            btnBack3.Name = "btnBack3";
+            btnBack3.Size = new Size(94, 36);
+            btnBack3.TabIndex = 116;
+            btnBack3.Text = "Back";
+            btnBack3.UseVisualStyleBackColor = false;
+            btnBack3.Click += btnBack3_Click;
+            // 
+            // btnDelete3
+            // 
+            btnDelete3.BackColor = Color.DarkGray;
+            btnDelete3.FlatStyle = FlatStyle.Popup;
+            btnDelete3.Font = new Font("Segoe UI Emoji", 10.2F, FontStyle.Bold);
+            btnDelete3.Location = new Point(609, 746);
+            btnDelete3.Name = "btnDelete3";
+            btnDelete3.Size = new Size(94, 36);
+            btnDelete3.TabIndex = 115;
+            btnDelete3.Text = "Delete";
+            btnDelete3.UseVisualStyleBackColor = false;
+            btnDelete3.Click += btnDelete3_Click;
+            // 
+            // btnClear3
+            // 
+            btnClear3.BackColor = Color.DarkGray;
+            btnClear3.FlatStyle = FlatStyle.Popup;
+            btnClear3.Font = new Font("Segoe UI Emoji", 10.2F, FontStyle.Bold);
+            btnClear3.Location = new Point(748, 746);
+            btnClear3.Name = "btnClear3";
+            btnClear3.Size = new Size(94, 36);
+            btnClear3.TabIndex = 114;
+            btnClear3.Text = "Clear";
+            btnClear3.UseVisualStyleBackColor = false;
+            btnClear3.Click += btnClear3_Click;
+            // 
+            // label17
+            // 
+            label17.AutoSize = true;
+            label17.Location = new Point(327, 626);
+            label17.Name = "label17";
+            label17.Size = new Size(179, 30);
+            label17.TabIndex = 113;
+            label17.Text = "Search by useID :";
+            // 
+            // txtSearch6
+            // 
+            txtSearch6.Location = new Point(512, 623);
+            txtSearch6.Name = "txtSearch6";
+            txtSearch6.Size = new Size(191, 36);
+            txtSearch6.TabIndex = 112;
+            // 
+            // btnSearch6
+            // 
+            btnSearch6.BackColor = Color.DarkGray;
+            btnSearch6.FlatStyle = FlatStyle.Popup;
+            btnSearch6.Font = new Font("Segoe UI Emoji", 10.2F, FontStyle.Bold);
+            btnSearch6.Location = new Point(543, 665);
+            btnSearch6.Name = "btnSearch6";
+            btnSearch6.Size = new Size(160, 36);
+            btnSearch6.TabIndex = 111;
+            btnSearch6.Text = "Search by ID";
+            btnSearch6.UseVisualStyleBackColor = false;
+            btnSearch6.Click += btnSearch6_Click;
+            // 
+            // txtSearch5
+            // 
+            txtSearch5.Location = new Point(748, 623);
+            txtSearch5.Name = "txtSearch5";
+            txtSearch5.Size = new Size(191, 36);
+            txtSearch5.TabIndex = 110;
+            // 
+            // btnSearch5
+            // 
+            btnSearch5.BackColor = Color.DarkGray;
+            btnSearch5.FlatStyle = FlatStyle.Popup;
+            btnSearch5.Font = new Font("Segoe UI Emoji", 10.2F, FontStyle.Bold);
+            btnSearch5.Location = new Point(748, 665);
+            btnSearch5.Name = "btnSearch5";
+            btnSearch5.Size = new Size(160, 36);
+            btnSearch5.TabIndex = 109;
+            btnSearch5.Text = "Search by ID";
+            btnSearch5.UseVisualStyleBackColor = false;
+            btnSearch5.Click += btnSearch5_Click;
+            // 
+            // dataGridView4
+            // 
+            dataGridView4.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView4.Location = new Point(29, 79);
+            dataGridView4.Name = "dataGridView4";
+            dataGridView4.RowHeadersWidth = 51;
+            dataGridView4.Size = new Size(910, 538);
+            dataGridView4.TabIndex = 0;
+            dataGridView4.CellContentClick += dataGridView3_CellContentClick;
             // 
             // User_Management
             // 
@@ -572,7 +798,11 @@
             tabPageUser.PerformLayout();
             tabPageUserActivity.ResumeLayout(false);
             tabPageUserActivity.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView2).EndInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            tabPageGlobalChat.ResumeLayout(false);
+            tabPageGlobalChat.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView4).EndInit();
             ResumeLayout(false);
         }
 
@@ -581,8 +811,7 @@
         private DataGridView dataGridViewUser;
         private TabControl tabControl1;
         private TabPage tabPageUser;
-        private TabPage tabPageUserActivity;
-        private TabPage tabPage3;
+        private TabPage tabPageGlobalChat;
         private Button btnBack;
         private TextBox txtFullName;
         private TextBox txtUserId;
@@ -606,12 +835,11 @@
         private TextBox txtSearch;
         private Button btnSearch;
         private Button btnDelete;
-        private Button btnDelete2;
-        private TextBox txtSearch2;
-        private Button btnSearch2;
-        private Button btnClear2;
-        private Button btnUpdate2;
-        private Button btnInsert2;
+        private TabPage tabPageUserActivity;
+        private TextBox txtSearch3;
+        private Button btnSearch3;
+        private DataGridView dataGridView2;
+        private DataGridView dataGridView1;
         private Label label9;
         private Label label10;
         private Label label11;
@@ -622,6 +850,26 @@
         private TextBox txtTestId;
         private TextBox txtUserId2;
         private TextBox txtActivityId;
-        private DataGridView dataGridView1;
+        private Button btnDelete2;
+        private TextBox txtSearch2;
+        private Button btnSearch2;
+        private Button btnClear2;
+        private Button btnUpdate2;
+        private Button btnInsert2;
+        private TextBox txtSearch4;
+        private Button btnSearch4;
+        private Label label14;
+        private Label label15;
+        private Label label16;
+        private DataGridView dataGridView4;
+        private Label label17;
+        private TextBox txtSearch6;
+        private Button btnSearch6;
+        private TextBox txtSearch5;
+        private Button btnSearch5;
+        private Button btnClear3;
+        private Button btnDelete3;
+        private Button btnBack2;
+        private Button btnBack3;
     }
 }
