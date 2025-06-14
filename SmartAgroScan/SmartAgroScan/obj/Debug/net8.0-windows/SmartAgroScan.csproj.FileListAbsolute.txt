@@ -153,4 +153,4 @@ C:\Users\USER\Desktop\SmartAgroScan-C-Sharp-Project\SmartAgroScan\SmartAgroScan\
 F:\OneDrive - American International University-Bangladesh\Documents\Desktop\C# Project\Test Project\SmartAgroScan\SmartAgroScan\obj\Debug\net8.0-windows\SmartAgroScan.Plant_Dashboard.resources
 F:\OneDrive - American International University-Bangladesh\Documents\Desktop\C# Project\Test Project\SmartAgroScan\SmartAgroScan\obj\Debug\net8.0-windows\SmartAgroScan.User_or_Admin.resources
 F:\OneDrive - American International University-Bangladesh\Documents\Desktop\C# Project\Test Project\SmartAgroScan\SmartAgroScan\obj\Debug\net8.0-windows\SmartAgroScan.User_Table.resources
-F:\OneDrive - American International University-Bangladesh\Documents\Desktop\C# Project\Test Project\SmartAgroScan\SmartAgroScan\obj\Debug\net8.0-windows\SmartAgroScan.Soil_Test_Request.resources
+F:\OneDrive - American International University-Bangladesh\Documents\Desktop\C# Project\Test Project\SmartAgroScan\SmartAgroScan\obj\Debug\net8.0-windows\SmartAgroScan.Plant_Management.resources

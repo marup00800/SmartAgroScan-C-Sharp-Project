@@ -39,5 +39,12 @@ namespace SmartAgroScan
             adminLogin.ShowDialog();
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Plant_Management plantManagementForm = new Plant_Management();
+            plantManagementForm.ShowDialog();
+        }
     }
 }

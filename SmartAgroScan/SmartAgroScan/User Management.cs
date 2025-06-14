@@ -450,11 +450,7 @@ namespace SmartAgroScan
             LoadUserActivityData();
         }
 
-        private void btnSoilTestRequest_Click(object sender, EventArgs e)
-        {
-            Soil_Test_Request soilTestRequestForm = new Soil_Test_Request();
-            soilTestRequestForm.ShowDialog();
-        }
+       
 
         private void btnBack2_Click(object sender, EventArgs e)
         {

@@ -16,7 +16,7 @@
     <Compile Update="Plant Dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Soil Test Request.cs">
+    <Compile Update="Plant Management.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Soil Test Tutorial.cs">
