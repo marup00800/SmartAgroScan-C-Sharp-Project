@@ -60,6 +60,7 @@ namespace SmartAgroScan
             adapter.Fill(dataSet);
             DataTable dataTable = dataSet.Tables[0];
             dataGridViewUser.AutoGenerateColumns = true;
+            dataGridViewUser.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridViewUser.DataSource = dataTable;
         }
 
@@ -450,7 +451,7 @@ namespace SmartAgroScan
             LoadUserActivityData();
         }
 
-       
+
 
         private void btnBack2_Click(object sender, EventArgs e)
         {
@@ -554,7 +555,7 @@ namespace SmartAgroScan
 
         }
 
-       
+
         private void tabPage1_Click(object sender, EventArgs e)
         {
 
@@ -582,6 +583,19 @@ namespace SmartAgroScan
 
         }
 
-       
+        private void txtDateofBirth_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtFullName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtGender_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

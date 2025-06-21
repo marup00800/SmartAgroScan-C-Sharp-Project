@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(User_Management));
             dataGridViewUser = new DataGridView();
             tabControl1 = new TabControl();
             tabPageUser = new TabPage();
@@ -36,14 +37,6 @@
             btnSearch = new Button();
             btnClear = new Button();
             btnUpdate = new Button();
-            label5 = new Label();
-            label6 = new Label();
-            label7 = new Label();
-            label8 = new Label();
-            label4 = new Label();
-            label3 = new Label();
-            label2 = new Label();
-            label1 = new Label();
             txtDateofBirth = new TextBox();
             txtAge = new TextBox();
             txtRole = new TextBox();
@@ -103,11 +96,14 @@
             // 
             // dataGridViewUser
             // 
+            dataGridViewUser.BackgroundColor = Color.FromArgb(70, 152, 156);
+            dataGridViewUser.BorderStyle = BorderStyle.None;
             dataGridViewUser.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewUser.Location = new Point(26, 102);
+            dataGridViewUser.GridColor = Color.FromArgb(61, 96, 119);
+            dataGridViewUser.Location = new Point(679, 206);
             dataGridViewUser.Name = "dataGridViewUser";
             dataGridViewUser.RowHeadersWidth = 51;
-            dataGridViewUser.Size = new Size(1066, 291);
+            dataGridViewUser.Size = new Size(1148, 627);
             dataGridViewUser.TabIndex = 0;
             dataGridViewUser.CellContentClick += dataGridView1_CellContentClick;
             // 
@@ -117,28 +113,22 @@
             tabControl1.Controls.Add(tabPageUserActivity);
             tabControl1.Controls.Add(tabPageGlobalChat);
             tabControl1.Font = new Font("Segoe UI", 10F);
-            tabControl1.Location = new Point(2, 12);
+            tabControl1.Location = new Point(-5, -2);
             tabControl1.Name = "tabControl1";
             tabControl1.SelectedIndex = 0;
-            tabControl1.Size = new Size(1925, 1045);
+            tabControl1.Size = new Size(1939, 1044);
             tabControl1.TabIndex = 1;
             // 
             // tabPageUser
             // 
-            tabPageUser.BackgroundImageLayout = ImageLayout.None;
+            tabPageUser.BackColor = Color.FromArgb(36, 55, 68);
+            tabPageUser.BackgroundImage = (Image)resources.GetObject("tabPageUser.BackgroundImage");
+            tabPageUser.BackgroundImageLayout = ImageLayout.Center;
             tabPageUser.Controls.Add(btnDelete);
             tabPageUser.Controls.Add(txtSearch);
             tabPageUser.Controls.Add(btnSearch);
             tabPageUser.Controls.Add(btnClear);
             tabPageUser.Controls.Add(btnUpdate);
-            tabPageUser.Controls.Add(label5);
-            tabPageUser.Controls.Add(label6);
-            tabPageUser.Controls.Add(label7);
-            tabPageUser.Controls.Add(label8);
-            tabPageUser.Controls.Add(label4);
-            tabPageUser.Controls.Add(label3);
-            tabPageUser.Controls.Add(label2);
-            tabPageUser.Controls.Add(label1);
             tabPageUser.Controls.Add(txtDateofBirth);
             tabPageUser.Controls.Add(txtAge);
             tabPageUser.Controls.Add(txtRole);
@@ -154,211 +144,162 @@
             tabPageUser.Location = new Point(4, 32);
             tabPageUser.Name = "tabPageUser";
             tabPageUser.Padding = new Padding(3);
-            tabPageUser.Size = new Size(1917, 1009);
+            tabPageUser.Size = new Size(1931, 1008);
             tabPageUser.TabIndex = 0;
             tabPageUser.Text = "Users";
-            tabPageUser.UseVisualStyleBackColor = true;
             tabPageUser.Click += tabPage1_Click;
             // 
             // btnDelete
             // 
-            btnDelete.BackColor = Color.DarkGray;
+            btnDelete.BackColor = Color.Transparent;
             btnDelete.FlatStyle = FlatStyle.Popup;
             btnDelete.Font = new Font("Segoe UI Emoji", 10.2F, FontStyle.Bold);
-            btnDelete.Location = new Point(780, 631);
+            btnDelete.Location = new Point(505, 680);
             btnDelete.Name = "btnDelete";
-            btnDelete.Size = new Size(94, 36);
+            btnDelete.Size = new Size(112, 41);
             btnDelete.TabIndex = 84;
-            btnDelete.Text = "Delete";
             btnDelete.UseVisualStyleBackColor = false;
             btnDelete.Click += btnDelete_Click;
             // 
             // txtSearch
             // 
-            txtSearch.Location = new Point(948, 606);
+            txtSearch.BackColor = Color.FromArgb(136, 196, 203);
+            txtSearch.BorderStyle = BorderStyle.None;
+            txtSearch.Font = new Font("Segoe UI", 14F);
+            txtSearch.Location = new Point(242, 752);
             txtSearch.Name = "txtSearch";
-            txtSearch.Size = new Size(191, 36);
+            txtSearch.Size = new Size(218, 32);
             txtSearch.TabIndex = 83;
             // 
             // btnSearch
             // 
-            btnSearch.BackColor = Color.DarkGray;
+            btnSearch.BackColor = Color.Transparent;
             btnSearch.FlatStyle = FlatStyle.Popup;
             btnSearch.Font = new Font("Segoe UI Emoji", 10.2F, FontStyle.Bold);
-            btnSearch.Location = new Point(978, 653);
+            btnSearch.Location = new Point(239, 800);
             btnSearch.Name = "btnSearch";
-            btnSearch.Size = new Size(160, 36);
+            btnSearch.Size = new Size(224, 34);
             btnSearch.TabIndex = 82;
-            btnSearch.Text = "Search by ID";
             btnSearch.UseVisualStyleBackColor = false;
             btnSearch.Click += button1_Click;
             // 
             // btnClear
             // 
-            btnClear.BackColor = Color.DarkGray;
+            btnClear.BackColor = Color.Transparent;
             btnClear.FlatStyle = FlatStyle.Popup;
             btnClear.Font = new Font("Segoe UI Emoji", 10.2F, FontStyle.Bold);
-            btnClear.Location = new Point(733, 479);
+            btnClear.Location = new Point(364, 680);
             btnClear.Name = "btnClear";
-            btnClear.Size = new Size(94, 36);
+            btnClear.Size = new Size(116, 41);
             btnClear.TabIndex = 81;
-            btnClear.Text = "Clear";
             btnClear.UseVisualStyleBackColor = false;
             btnClear.Click += btnClear_Click_1;
             // 
             // btnUpdate
             // 
-            btnUpdate.BackColor = Color.DarkGray;
+            btnUpdate.BackColor = Color.Transparent;
             btnUpdate.FlatStyle = FlatStyle.Popup;
             btnUpdate.Font = new Font("Segoe UI Emoji", 10.2F, FontStyle.Bold);
-            btnUpdate.Location = new Point(987, 479);
+            btnUpdate.ForeColor = Color.Transparent;
+            btnUpdate.Location = new Point(224, 683);
             btnUpdate.Name = "btnUpdate";
-            btnUpdate.Size = new Size(94, 36);
+            btnUpdate.Size = new Size(115, 38);
             btnUpdate.TabIndex = 80;
-            btnUpdate.Text = "Update";
             btnUpdate.UseVisualStyleBackColor = false;
             btnUpdate.Click += btnUpdate_Click;
             // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Location = new Point(1136, 493);
-            label5.Name = "label5";
-            label5.Size = new Size(58, 30);
-            label5.TabIndex = 79;
-            label5.Text = "DOB";
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Location = new Point(1136, 434);
-            label6.Name = "label6";
-            label6.Size = new Size(52, 30);
-            label6.TabIndex = 78;
-            label6.Text = "Age";
-            // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.Location = new Point(1136, 320);
-            label7.Name = "label7";
-            label7.Size = new Size(85, 30);
-            label7.TabIndex = 77;
-            label7.Text = "Gender";
-            // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.Location = new Point(1166, 382);
-            label8.Name = "label8";
-            label8.Size = new Size(55, 30);
-            label8.TabIndex = 76;
-            label8.Text = "Role";
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Location = new Point(1136, 264);
-            label4.Name = "label4";
-            label4.Size = new Size(103, 30);
-            label4.TabIndex = 75;
-            label4.Text = "Password";
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Location = new Point(1136, 205);
-            label3.Name = "label3";
-            label3.Size = new Size(111, 30);
-            label3.TabIndex = 74;
-            label3.Text = "Username";
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Location = new Point(1136, 147);
-            label2.Name = "label2";
-            label2.Size = new Size(110, 30);
-            label2.TabIndex = 73;
-            label2.Text = "Full Name";
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(1136, 91);
-            label1.Name = "label1";
-            label1.Size = new Size(84, 30);
-            label1.TabIndex = 72;
-            label1.Text = "User ID";
-            label1.Click += label1_Click;
-            // 
             // txtDateofBirth
             // 
-            txtDateofBirth.Location = new Point(1258, 493);
+            txtDateofBirth.BackColor = Color.FromArgb(12, 113, 122);
+            txtDateofBirth.BorderStyle = BorderStyle.None;
+            txtDateofBirth.Font = new Font("Segoe UI", 15F);
+            txtDateofBirth.Location = new Point(332, 583);
             txtDateofBirth.Name = "txtDateofBirth";
-            txtDateofBirth.Size = new Size(191, 36);
+            txtDateofBirth.Size = new Size(242, 34);
             txtDateofBirth.TabIndex = 71;
             // 
             // txtAge
             // 
-            txtAge.Location = new Point(1258, 437);
+            txtAge.BackColor = Color.FromArgb(12, 113, 122);
+            txtAge.BorderStyle = BorderStyle.None;
+            txtAge.Font = new Font("Segoe UI", 15F);
+            txtAge.Location = new Point(332, 532);
             txtAge.Name = "txtAge";
-            txtAge.Size = new Size(191, 36);
+            txtAge.Size = new Size(242, 34);
             txtAge.TabIndex = 70;
             // 
             // txtRole
             // 
-            txtRole.Location = new Point(1258, 379);
+            txtRole.BackColor = Color.FromArgb(12, 113, 122);
+            txtRole.BorderStyle = BorderStyle.None;
+            txtRole.Font = new Font("Segoe UI", 15F);
+            txtRole.Location = new Point(332, 478);
             txtRole.Name = "txtRole";
-            txtRole.Size = new Size(191, 36);
+            txtRole.Size = new Size(242, 34);
             txtRole.TabIndex = 69;
             // 
             // txtGender
             // 
-            txtGender.Location = new Point(1258, 320);
+            txtGender.BackColor = Color.FromArgb(12, 113, 122);
+            txtGender.BorderStyle = BorderStyle.None;
+            txtGender.Font = new Font("Segoe UI", 15F);
+            txtGender.Location = new Point(332, 425);
             txtGender.Name = "txtGender";
-            txtGender.Size = new Size(191, 36);
+            txtGender.Size = new Size(242, 34);
             txtGender.TabIndex = 68;
+            txtGender.TextChanged += txtGender_TextChanged;
             // 
             // txtPassword
             // 
-            txtPassword.Location = new Point(1258, 261);
+            txtPassword.BackColor = Color.FromArgb(12, 113, 122);
+            txtPassword.BorderStyle = BorderStyle.None;
+            txtPassword.Font = new Font("Segoe UI", 15F);
+            txtPassword.Location = new Point(332, 372);
             txtPassword.Name = "txtPassword";
-            txtPassword.Size = new Size(191, 36);
+            txtPassword.Size = new Size(242, 34);
             txtPassword.TabIndex = 67;
             // 
             // txtUsername
             // 
-            txtUsername.Location = new Point(1258, 202);
+            txtUsername.BackColor = Color.FromArgb(12, 113, 122);
+            txtUsername.BorderStyle = BorderStyle.None;
+            txtUsername.Font = new Font("Segoe UI", 15F);
+            txtUsername.Location = new Point(332, 319);
             txtUsername.Name = "txtUsername";
-            txtUsername.Size = new Size(191, 36);
+            txtUsername.Size = new Size(242, 34);
             txtUsername.TabIndex = 66;
             // 
             // txtFullName
             // 
-            txtFullName.Location = new Point(1258, 144);
+            txtFullName.BackColor = Color.FromArgb(12, 113, 122);
+            txtFullName.BorderStyle = BorderStyle.None;
+            txtFullName.Font = new Font("Segoe UI", 15F);
+            txtFullName.Location = new Point(332, 267);
             txtFullName.Name = "txtFullName";
-            txtFullName.Size = new Size(191, 36);
+            txtFullName.Size = new Size(242, 34);
             txtFullName.TabIndex = 65;
             // 
             // txtUserId
             // 
-            txtUserId.Location = new Point(1258, 85);
+            txtUserId.BackColor = Color.FromArgb(12, 113, 122);
+            txtUserId.BorderStyle = BorderStyle.None;
+            txtUserId.Font = new Font("Segoe UI", 15F);
+            txtUserId.Location = new Point(332, 214);
             txtUserId.Name = "txtUserId";
-            txtUserId.Size = new Size(191, 36);
+            txtUserId.Size = new Size(242, 34);
             txtUserId.TabIndex = 64;
             txtUserId.TextChanged += txtUserId_TextChanged;
             // 
             // btnInsert
             // 
-            btnInsert.BackColor = Color.DarkGray;
+            btnInsert.BackColor = Color.Transparent;
             btnInsert.FlatStyle = FlatStyle.Popup;
             btnInsert.Font = new Font("Segoe UI Emoji", 10.2F, FontStyle.Bold);
-            btnInsert.Location = new Point(859, 479);
+            btnInsert.ForeColor = Color.Transparent;
+            btnInsert.Location = new Point(85, 683);
             btnInsert.Name = "btnInsert";
-            btnInsert.Size = new Size(94, 36);
+            btnInsert.Size = new Size(115, 38);
             btnInsert.TabIndex = 63;
-            btnInsert.Text = "Insert";
             btnInsert.UseVisualStyleBackColor = false;
             btnInsert.Click += btnInsert_Click;
             // 
@@ -367,7 +308,7 @@
             btnBack.BackColor = Color.DarkGray;
             btnBack.FlatStyle = FlatStyle.Popup;
             btnBack.Font = new Font("Segoe UI Emoji", 10.2F, FontStyle.Bold);
-            btnBack.Location = new Point(1341, 736);
+            btnBack.Location = new Point(579, 873);
             btnBack.Name = "btnBack";
             btnBack.Size = new Size(94, 36);
             btnBack.TabIndex = 62;
@@ -407,7 +348,7 @@
             tabPageUserActivity.Location = new Point(4, 32);
             tabPageUserActivity.Name = "tabPageUserActivity";
             tabPageUserActivity.Padding = new Padding(3);
-            tabPageUserActivity.Size = new Size(1917, 1009);
+            tabPageUserActivity.Size = new Size(1931, 1008);
             tabPageUserActivity.TabIndex = 1;
             tabPageUserActivity.Text = "User Activity";
             tabPageUserActivity.UseVisualStyleBackColor = true;
@@ -679,7 +620,7 @@
             tabPageGlobalChat.Location = new Point(4, 32);
             tabPageGlobalChat.Name = "tabPageGlobalChat";
             tabPageGlobalChat.Padding = new Padding(3);
-            tabPageGlobalChat.Size = new Size(1917, 1009);
+            tabPageGlobalChat.Size = new Size(1931, 1008);
             tabPageGlobalChat.TabIndex = 2;
             tabPageGlobalChat.Text = "Global Chat";
             tabPageGlobalChat.UseVisualStyleBackColor = true;
@@ -787,7 +728,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1924, 1055);
+            ClientSize = new Size(1924, 1031);
             Controls.Add(tabControl1);
             Name = "User_Management";
             Text = "User_Management";
@@ -816,20 +757,12 @@
         private TextBox txtFullName;
         private TextBox txtUserId;
         private Button btnInsert;
-        private Label label1;
         private TextBox txtDateofBirth;
         private TextBox txtAge;
         private TextBox txtRole;
         private TextBox txtGender;
         private TextBox txtPassword;
         private TextBox txtUsername;
-        private Label label5;
-        private Label label6;
-        private Label label7;
-        private Label label8;
-        private Label label4;
-        private Label label3;
-        private Label label2;
         private Button btnUpdate;
         private Button btnClear;
         private TextBox txtSearch;
