@@ -60,6 +60,7 @@ namespace SmartAgroScan
             adapter.Fill(dataSet);
             DataTable dataTable = dataSet.Tables[0];
             dataGridViewUser.AutoGenerateColumns = true;
+            dataGridViewUser.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridViewUser.DataSource = dataTable;
         }
 
@@ -252,13 +253,17 @@ namespace SmartAgroScan
 
         ////////////////////////////////////////////////////////////////////////// User Activity Tab ////////////////////////////////////////////////
 
-
+        public void soilTestRequestClear()
+        {
+            txtSearch3.Text = "";
+            txtSearch4.Text = "";
+        }
         public void userActivityClear()
         {
             txtActivityId.Text = "";
             txtUserId2.Text = "";
             txtTestId.Text = "";
-            txtActivityType.Text = "";
+            richTextBox1.Text = "";
             txtActivityTime.Text = "";
             txtSearch2.Text = "";
             txtSearch3.Text = "";
@@ -308,16 +313,16 @@ namespace SmartAgroScan
             txtActivityId.Text = dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
             txtUserId2.Text = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
             txtTestId.Text = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
-            txtActivityType.Text = dataGridView1.Rows[e.RowIndex].Cells[3].Value.ToString();
+            richTextBox1.Text = dataGridView1.Rows[e.RowIndex].Cells[3].Value.ToString();
             txtActivityTime.Text = dataGridView1.Rows[e.RowIndex].Cells[4].Value.ToString();
-            txtSearch4.Text = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
+
 
         }
 
         private void btnInsert2_Click(object sender, EventArgs e)
         {
             if (txtUserId2.Text == "" ||
-                txtActivityType.Text == "" ||
+                richTextBox1.Text == "" ||
                 txtActivityTime.Text == "")
             {
                 MessageBox.Show("Please fill in all fields.");
@@ -332,7 +337,7 @@ namespace SmartAgroScan
                 SqlCommand cmd = new SqlCommand(query, connection);
                 cmd.Parameters.AddWithValue("@UserID", txtUserId2.Text);
                 cmd.Parameters.AddWithValue("@TestID", txtTestId.Text);
-                cmd.Parameters.AddWithValue("@ActivityType", txtActivityType.Text);
+                cmd.Parameters.AddWithValue("@ActivityType", richTextBox1.Text);
                 cmd.Parameters.AddWithValue("@ActivityTime", txtActivityTime.Text);
                 try
                 {
@@ -358,7 +363,7 @@ namespace SmartAgroScan
             if (txtActivityId.Text == "" ||
                 txtUserId2.Text == "" ||
                 txtTestId.Text == "" ||
-                txtActivityType.Text == "" ||
+                richTextBox1.Text == "" ||
                 txtActivityTime.Text == "")
             {
                 MessageBox.Show("Please fill in all fields.");
@@ -372,7 +377,7 @@ namespace SmartAgroScan
                 SqlCommand cmd = new SqlCommand(query, conn);
                 cmd.Parameters.AddWithValue("@UserID", txtUserId2.Text);
                 cmd.Parameters.AddWithValue("@TestID", txtTestId.Text);
-                cmd.Parameters.AddWithValue("@ActivityType", txtActivityType.Text);
+                cmd.Parameters.AddWithValue("@ActivityType", richTextBox1.Text);
                 cmd.Parameters.AddWithValue("@ActivityTime", txtActivityTime.Text);
                 cmd.Parameters.AddWithValue("@ActivityID", txtActivityId.Text);
                 cmd.ExecuteNonQuery();
@@ -450,7 +455,7 @@ namespace SmartAgroScan
             LoadUserActivityData();
         }
 
-       
+
 
         private void btnBack2_Click(object sender, EventArgs e)
         {
@@ -461,6 +466,52 @@ namespace SmartAgroScan
         }
 
 
+        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            try
+            {
+                if (e.RowIndex < 0) return;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error selecting row: " + ex.Message);
+                return;
+            }
+
+
+
+            txtSearch3.Text = dataGridView2.Rows[e.RowIndex].Cells[0].Value.ToString();
+            txtSearch4.Text = dataGridView2.Rows[e.RowIndex].Cells[1].Value.ToString();
+        }
+
+        private void btnClear3_Click(object sender, EventArgs e)
+        {
+            soilTestRequestClear();
+
+
+        }
+
+        private void btnDelete4_Click(object sender, EventArgs e)
+        {
+            SqlConnection connection = new SqlConnection(connectionString);
+            connection.Open();
+
+            string query = "DELETE FROM SoilTestRequest WHERE RequestID = @RequestID"; 
+            SqlCommand cmd = new SqlCommand(query, connection);
+            cmd.Parameters.AddWithValue("@RequestID", txtSearch3.Text);
+
+            cmd.ExecuteNonQuery();
+
+            MessageBox.Show("Soil test request deleted successfully.");
+            LoadUserActivityData();
+            soilTestRequestClear();
+
+            connection.Close();
+        }
+
+
+
+
         ////////////////////////////////////////////////////////////////////////// Global Chat Tab //////////////////////////////////////////////////////////
 
         public void clearGlobalChat()
@@ -469,10 +520,7 @@ namespace SmartAgroScan
             txtSearch6.Text = "";
         }
 
-        private void btnClear3_Click(object sender, EventArgs e)
-        {
-            clearGlobalChat();
-        }
+
         public void LoadGlobalChatData()
         {
             SqlConnection connection = new SqlConnection(connectionString);
@@ -507,7 +555,7 @@ namespace SmartAgroScan
         {
             SqlConnection connection = new SqlConnection(connectionString);
             connection.Open();
-            string query = "SELECT * FROM GlobalChat WHERE Message LIKE '%" + txtSearch5.Text + "%'";
+            string query = "SELECT * FROM GlobalChat WHERE ChatID LIKE '%" + txtSearch5.Text + "%'";
             SqlCommand cmd = new SqlCommand(query, connection);
             SqlDataAdapter adp = new SqlDataAdapter(cmd);
             DataSet ds = new DataSet();
@@ -524,7 +572,18 @@ namespace SmartAgroScan
             connection.Open();
             string query = "DELETE FROM GlobalChat WHERE ChatID = @ChatID";
             SqlCommand cmd = new SqlCommand(query, connection);
+            cmd.Parameters.AddWithValue("@ChatID", txtSearch5.Text);
+            cmd.ExecuteNonQuery();
+            MessageBox.Show("Chat message deleted successfully.");
+            LoadGlobalChatData();
+            clearGlobalChat();
 
+        }
+
+        private void btnRefresh3_Click(object sender, EventArgs e)
+        {
+            LoadGlobalChatData();
+            clearGlobalChat();
 
         }
 
@@ -546,6 +605,8 @@ namespace SmartAgroScan
 
         }
 
+
+
         private void btnBack3_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -554,18 +615,11 @@ namespace SmartAgroScan
 
         }
 
-       
+
         private void tabPage1_Click(object sender, EventArgs e)
         {
 
         }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-
 
         private void tabPageUserActivity_Click(object sender, EventArgs e)
         {
@@ -582,6 +636,21 @@ namespace SmartAgroScan
 
         }
 
-       
+        private void txtGender_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtSearch6_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtSearch5_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        
     }
 }
