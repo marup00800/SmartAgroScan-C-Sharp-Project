@@ -60,6 +60,7 @@ namespace SmartAgroScan
             adapter.Fill(dataSet);
             DataTable dataTable = dataSet.Tables[0];
             dataGridViewUser.AutoGenerateColumns = true;
+            dataGridViewUser.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridViewUser.DataSource = dataTable;
         }
 
@@ -450,7 +451,7 @@ namespace SmartAgroScan
             LoadUserActivityData();
         }
 
-       
+
 
         private void btnBack2_Click(object sender, EventArgs e)
         {
@@ -469,10 +470,7 @@ namespace SmartAgroScan
             txtSearch6.Text = "";
         }
 
-        private void btnClear3_Click(object sender, EventArgs e)
-        {
-            clearGlobalChat();
-        }
+
         public void LoadGlobalChatData()
         {
             SqlConnection connection = new SqlConnection(connectionString);
@@ -507,7 +505,7 @@ namespace SmartAgroScan
         {
             SqlConnection connection = new SqlConnection(connectionString);
             connection.Open();
-            string query = "SELECT * FROM GlobalChat WHERE Message LIKE '%" + txtSearch5.Text + "%'";
+            string query = "SELECT * FROM GlobalChat WHERE ChatID LIKE '%" + txtSearch5.Text + "%'";
             SqlCommand cmd = new SqlCommand(query, connection);
             SqlDataAdapter adp = new SqlDataAdapter(cmd);
             DataSet ds = new DataSet();
@@ -524,7 +522,18 @@ namespace SmartAgroScan
             connection.Open();
             string query = "DELETE FROM GlobalChat WHERE ChatID = @ChatID";
             SqlCommand cmd = new SqlCommand(query, connection);
+            cmd.Parameters.AddWithValue("@ChatID", txtSearch5.Text);
+            cmd.ExecuteNonQuery();
+            MessageBox.Show("Chat message deleted successfully.");
+            LoadGlobalChatData();
+            clearGlobalChat();
 
+        }
+
+        private void btnRefresh3_Click(object sender, EventArgs e)
+        {
+            LoadGlobalChatData();
+            clearGlobalChat();
 
         }
 
@@ -546,6 +555,8 @@ namespace SmartAgroScan
 
         }
 
+
+
         private void btnBack3_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -554,7 +565,7 @@ namespace SmartAgroScan
 
         }
 
-       
+
         private void tabPage1_Click(object sender, EventArgs e)
         {
 
@@ -582,6 +593,31 @@ namespace SmartAgroScan
 
         }
 
-       
+        private void txtDateofBirth_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtFullName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtGender_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtSearch6_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtSearch5_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        
     }
 }

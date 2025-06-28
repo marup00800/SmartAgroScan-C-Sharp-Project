@@ -13,7 +13,7 @@ namespace SmartAgroScan
     internal class GlobalChatService
     {
 
-        private string connectionString = @"Data Source=DESKTOP-FGFOKG6;Initial Catalog=PlantTest;Integrated Security=True;Trust Server Certificate=True";
+        private string connectionString = @"Data Source=Marup;Initial Catalog=PlantTest;Integrated Security=True;Trust Server Certificate=True";
         private int userId; // This is the user ID of the logged-in user
 
         public GlobalChatService()

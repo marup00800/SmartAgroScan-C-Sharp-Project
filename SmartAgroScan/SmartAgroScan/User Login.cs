@@ -14,7 +14,7 @@ namespace SmartAgroScan
     public partial class User_Login : Form
     {
 
-        string connectionString = @"Data Source=DESKTOP-FGFOKG6;Initial Catalog=PlantTest;Integrated Security=True;Trust Server Certificate=True";
+        string connectionString = @"Data Source=MARUP;Initial Catalog=PlantTest;Integrated Security=True;Trust Server Certificate=True";
 
         public User_Login()
         {
