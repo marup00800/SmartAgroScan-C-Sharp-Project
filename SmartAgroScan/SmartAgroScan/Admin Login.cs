@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Data.SqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -34,13 +35,39 @@ namespace SmartAgroScan
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            Admin_Control_Panel admin_Control_Panel = new Admin_Control_Panel();
-            admin_Control_Panel.ShowDialog();
+            string username = txtUsername.Text;
+            string password = txtPassword.Text;
 
+            string connectionString = @"Data Source=MARUP;Initial Catalog=PlantTest;Integrated Security=True;Trust Server Certificate=True";
+            SqlConnection connection = new SqlConnection(connectionString);
+            connection.Open();
+            string query = "SELECT UserID FROM Users WHERE Username = @Username AND Password = @Password AND Role = 'Admin'";
+            SqlCommand cmd = new SqlCommand(query, connection);
+            cmd.Parameters.AddWithValue("@Username", username);
+            cmd.Parameters.AddWithValue("@Password", password);
+            SqlDataReader reader = cmd.ExecuteReader();
+            if (reader.Read())
+            {
+                int userId = (int)reader["UserID"];
+                MessageBox.Show("Login successful!");
+                this.Hide();
+                Admin_Control_Panel adminControlPanel = new Admin_Control_Panel();
+                adminControlPanel.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Invalid username or password. Please try again.");
+
+
+            }
         }
 
         private void Admin_Login_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtPassword_TextChanged(object sender, EventArgs e)
         {
 
         }

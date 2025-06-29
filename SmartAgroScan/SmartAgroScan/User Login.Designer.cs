@@ -110,6 +110,7 @@
             Controls.Add(txtUsername);
             Controls.Add(btnLogin);
             DoubleBuffered = true;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "User_Login";
             Text = "User_Login";
             Load += User_Login_Load;

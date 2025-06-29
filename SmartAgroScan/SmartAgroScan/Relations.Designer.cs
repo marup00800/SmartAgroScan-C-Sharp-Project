@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Relations));
             dataGridView1 = new DataGridView();
             label15 = new Label();
             txtRecommendationId = new TextBox();
@@ -241,6 +242,7 @@
             Controls.Add(label15);
             Controls.Add(txtRecommendationId);
             Controls.Add(dataGridView1);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Relations";
             Text = "Relations";
             Load += Relations_Load;

@@ -202,6 +202,7 @@
             Controls.Add(txtFullName);
             Controls.Add(btnBack);
             DoubleBuffered = true;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "User_Registration";
             Text = "User_Registration";
             Load += User_Registration_Load;

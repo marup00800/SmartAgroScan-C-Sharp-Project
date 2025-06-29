@@ -350,6 +350,7 @@
             Controls.Add(txtP);
             Controls.Add(txtN);
             DoubleBuffered = true;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Soil_Test";
             Text = "Soil_Test";
             Load += Soil_Test_Load;

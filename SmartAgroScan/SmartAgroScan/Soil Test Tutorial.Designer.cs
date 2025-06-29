@@ -40,6 +40,7 @@
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1360, 756);
             DoubleBuffered = true;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Soil_Test_Tutorial";
             Text = "Soil_Test_Tutorial";
             Load += Soil_Test_Tutorial_Load;

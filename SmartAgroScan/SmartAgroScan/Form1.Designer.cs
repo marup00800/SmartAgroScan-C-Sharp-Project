@@ -71,8 +71,9 @@
             Controls.Add(btnAdmin);
             Controls.Add(btnUser);
             DoubleBuffered = true;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Form1";
-            Text = "Form1";
+            Text = "Login Form";
             ResumeLayout(false);
         }
 

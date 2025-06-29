@@ -32,7 +32,7 @@ namespace SmartAgroScan
         private void btnConfirm_Click(object sender, EventArgs e)
         {
 
-            
+
             SqlConnection connection = new SqlConnection(connectionString);
             connection.Open();
             string query = "INSERT INTO Users (FullName, Username, Password, Gender, Role, Age, DOB) " +
@@ -71,6 +71,9 @@ namespace SmartAgroScan
 
         }
 
-       
+        private void txtPassword_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

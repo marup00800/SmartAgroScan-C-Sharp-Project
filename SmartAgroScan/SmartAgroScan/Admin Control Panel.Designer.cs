@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Admin_Control_Panel));
             button1 = new Button();
             button2 = new Button();
             btnBack = new Button();
@@ -35,42 +36,50 @@
             // 
             // button1
             // 
-            button1.Location = new Point(89, 179);
+            button1.BackColor = Color.Transparent;
+            button1.FlatStyle = FlatStyle.Popup;
+            button1.Location = new Point(338, 334);
             button1.Name = "button1";
-            button1.Size = new Size(183, 95);
+            button1.Size = new Size(323, 141);
             button1.TabIndex = 0;
-            button1.Text = "User Management";
-            button1.UseVisualStyleBackColor = true;
+            button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
             // button2
             // 
-            button2.Location = new Point(344, 179);
+            button2.BackColor = Color.Transparent;
+            button2.FlatStyle = FlatStyle.Popup;
+            button2.Location = new Point(783, 341);
             button2.Name = "button2";
-            button2.Size = new Size(183, 95);
+            button2.Size = new Size(323, 134);
             button2.TabIndex = 1;
-            button2.Text = "PlantManagementForm";
-            button2.UseVisualStyleBackColor = true;
+            button2.UseVisualStyleBackColor = false;
             button2.Click += button2_Click;
             // 
             // btnBack
             // 
-            btnBack.Location = new Point(617, 349);
+            btnBack.BackColor = Color.Transparent;
+            btnBack.FlatStyle = FlatStyle.Popup;
+            btnBack.Location = new Point(1190, 703);
             btnBack.Name = "btnBack";
-            btnBack.Size = new Size(105, 38);
+            btnBack.Size = new Size(91, 39);
             btnBack.TabIndex = 44;
             btnBack.Text = "Back";
-            btnBack.UseVisualStyleBackColor = true;
+            btnBack.UseVisualStyleBackColor = false;
             btnBack.Click += btnBack_Click;
             // 
             // Admin_Control_Panel
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(871, 495);
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImageLayout = ImageLayout.Stretch;
+            ClientSize = new Size(1394, 849);
             Controls.Add(btnBack);
             Controls.Add(button2);
             Controls.Add(button1);
+            DoubleBuffered = true;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Admin_Control_Panel";
             Text = "Admin_Control_Panel";
             Load += Admin_Control_Panel_Load;
