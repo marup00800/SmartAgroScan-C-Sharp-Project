@@ -4,6 +4,9 @@
     <Compile Update="Admin Control Panel.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Admin Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Admin Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -13,10 +16,16 @@
     <Compile Update="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Plant Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Plant Management.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Relations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Soil Test Request.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Soil Test Tutorial.cs">
@@ -25,13 +34,22 @@
     <Compile Update="Soil Test.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="User Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="User Login.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="User Management.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="User or Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="User Registration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="User Table.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

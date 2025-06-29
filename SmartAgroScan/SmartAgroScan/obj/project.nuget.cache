@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "U7iVk2WZk/A=",
+  "dgSpecHash": "JKtCeBTHaG8=",
   "success": true,
-  "projectFilePath": "F:\\OneDrive - American International University-Bangladesh\\Documents\\Desktop\\C# Project\\Test Project\\SmartAgroScan-C-Sharp-Project\\SmartAgroScan\\SmartAgroScan\\SmartAgroScan.csproj",
+  "projectFilePath": "D:\\SmartAgroScan-C-Sharp-Project\\SmartAgroScan\\SmartAgroScan\\SmartAgroScan.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\marup\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\marup\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
