@@ -75,6 +75,7 @@ namespace SmartAgroScan
             txtWaterTip.Text = dataGridView1.Rows[e.RowIndex].Cells[4].Value.ToString();
             txtFertilizerTip.Text = dataGridView1.Rows[e.RowIndex].Cells[5].Value.ToString();
             txtHarvestTip.Text = dataGridView1.Rows[e.RowIndex].Cells[6].Value.ToString();
+            txtPlantId2.Text = dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
             try
             {
                 string imagePath = Path.Combine(Application.StartupPath, txtPicturePath.Text); // like bin\Debug\images\mango.jpg
@@ -270,6 +271,7 @@ namespace SmartAgroScan
             txtPh.Text = dataGridView2.Rows[e.RowIndex].Cells[4].Value.ToString();
             txtMoisture.Text = dataGridView2.Rows[e.RowIndex].Cells[5].Value.ToString();
             txtSoilCondition.Text = dataGridView2.Rows[e.RowIndex].Cells[7].Value.ToString();
+            txtTextId2.Text = dataGridView2.Rows[e.RowIndex].Cells[0].Value.ToString();
 
         }
 
@@ -377,6 +379,36 @@ namespace SmartAgroScan
             dataGridView2.DataSource = dt;
 
         }
+
+        private void btnConnect_Click(object sender, EventArgs e)
+        {
+            if (txtTextId2.Text == "" ||
+                txtPlantId2.Text == "")
+            {
+                MessageBox.Show("Please enter both Test ID and Plant ID.");
+                return;
+            }
+            SqlConnection connection = new SqlConnection(connectionString);
+            connection.Open();
+
+            string query = "INSERT INTO PlantRecommendation (TestID, PlantID) VALUES (@TestID, @PlantID)";
+            SqlCommand cmd = new SqlCommand(query, connection);
+            cmd.Parameters.AddWithValue("@TestID", txtTextId2.Text);
+            cmd.Parameters.AddWithValue("@PlantID", txtPlantId2.Text);
+
+            cmd.ExecuteNonQuery(); 
+
+            MessageBox.Show("Plant recommendation inserted successfully.");
+
+            txtTextId2.Text = "";
+            txtPlantId2.Text = "";
+
+            LoadData();
+            loadSoilData();
+
+            connection.Close();
+        }
+
 
         private void btnBack_Click(object sender, EventArgs e)
         {

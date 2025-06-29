@@ -76,6 +76,9 @@
             btnRefresh = new Button();
             btnRefresh2 = new Button();
             btnRelations = new Button();
+            txtPlantId2 = new TextBox();
+            txtTextId2 = new TextBox();
+            btnConnect = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
@@ -94,6 +97,7 @@
             // label6
             // 
             label6.AutoSize = true;
+            label6.BackColor = Color.Transparent;
             label6.Location = new Point(486, 607);
             label6.Name = "label6";
             label6.Size = new Size(84, 20);
@@ -103,6 +107,7 @@
             // label7
             // 
             label7.AutoSize = true;
+            label7.BackColor = Color.Transparent;
             label7.Location = new Point(67, 607);
             label7.Name = "label7";
             label7.Size = new Size(73, 20);
@@ -112,6 +117,7 @@
             // label8
             // 
             label8.AutoSize = true;
+            label8.BackColor = Color.Transparent;
             label8.Location = new Point(274, 607);
             label8.Name = "label8";
             label8.Size = new Size(91, 20);
@@ -121,6 +127,7 @@
             // label4
             // 
             label4.AutoSize = true;
+            label4.BackColor = Color.Transparent;
             label4.Location = new Point(67, 552);
             label4.Name = "label4";
             label4.Size = new Size(139, 20);
@@ -130,6 +137,7 @@
             // label3
             // 
             label3.AutoSize = true;
+            label3.BackColor = Color.Transparent;
             label3.Location = new Point(602, 486);
             label3.Name = "label3";
             label3.Size = new Size(86, 20);
@@ -139,6 +147,7 @@
             // label2
             // 
             label2.AutoSize = true;
+            label2.BackColor = Color.Transparent;
             label2.Location = new Point(267, 483);
             label2.Name = "label2";
             label2.Size = new Size(86, 20);
@@ -148,6 +157,7 @@
             // label1
             // 
             label1.AutoSize = true;
+            label1.BackColor = Color.Transparent;
             label1.Location = new Point(77, 483);
             label1.Name = "label1";
             label1.Size = new Size(61, 20);
@@ -305,6 +315,7 @@
             // label5
             // 
             label5.AutoSize = true;
+            label5.BackColor = Color.Transparent;
             label5.Location = new Point(998, 482);
             label5.Name = "label5";
             label5.Size = new Size(54, 20);
@@ -329,6 +340,7 @@
             // label10
             // 
             label10.AutoSize = true;
+            label10.BackColor = Color.Transparent;
             label10.Location = new Point(1183, 530);
             label10.Name = "label10";
             label10.Size = new Size(17, 20);
@@ -346,6 +358,7 @@
             // label11
             // 
             label11.AutoSize = true;
+            label11.BackColor = Color.Transparent;
             label11.Location = new Point(1331, 530);
             label11.Name = "label11";
             label11.Size = new Size(18, 20);
@@ -362,6 +375,7 @@
             // label12
             // 
             label12.AutoSize = true;
+            label12.BackColor = Color.Transparent;
             label12.Location = new Point(1615, 534);
             label12.Name = "label12";
             label12.Size = new Size(67, 20);
@@ -378,6 +392,7 @@
             // label13
             // 
             label13.AutoSize = true;
+            label13.BackColor = Color.Transparent;
             label13.Location = new Point(1471, 533);
             label13.Name = "label13";
             label13.Size = new Size(29, 20);
@@ -402,6 +417,7 @@
             // label15
             // 
             label15.AutoSize = true;
+            label15.BackColor = Color.Transparent;
             label15.Location = new Point(1003, 527);
             label15.Name = "label15";
             label15.Size = new Size(20, 20);
@@ -411,6 +427,7 @@
             // label16
             // 
             label16.AutoSize = true;
+            label16.BackColor = Color.Transparent;
             label16.Location = new Point(1019, 589);
             label16.Name = "label16";
             label16.Size = new Size(103, 20);
@@ -521,13 +538,48 @@
             btnRelations.BackColor = Color.DarkGray;
             btnRelations.FlatStyle = FlatStyle.Popup;
             btnRelations.Font = new Font("Segoe UI Emoji", 10.2F, FontStyle.Bold);
-            btnRelations.Location = new Point(1566, 892);
+            btnRelations.Location = new Point(1688, 804);
             btnRelations.Name = "btnRelations";
-            btnRelations.Size = new Size(109, 36);
+            btnRelations.Size = new Size(109, 45);
             btnRelations.TabIndex = 130;
             btnRelations.Text = "Relations";
             btnRelations.UseVisualStyleBackColor = false;
             btnRelations.Click += btnRelations_Click;
+            // 
+            // txtPlantId2
+            // 
+            txtPlantId2.BackColor = Color.Firebrick;
+            txtPlantId2.BorderStyle = BorderStyle.None;
+            txtPlantId2.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            txtPlantId2.ForeColor = Color.White;
+            txtPlantId2.Location = new Point(1235, 810);
+            txtPlantId2.Name = "txtPlantId2";
+            txtPlantId2.Size = new Size(154, 27);
+            txtPlantId2.TabIndex = 131;
+            // 
+            // txtTextId2
+            // 
+            txtTextId2.BackColor = Color.FromArgb(255, 128, 0);
+            txtTextId2.BorderStyle = BorderStyle.None;
+            txtTextId2.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            txtTextId2.ForeColor = Color.White;
+            txtTextId2.Location = new Point(1469, 810);
+            txtTextId2.Name = "txtTextId2";
+            txtTextId2.Size = new Size(149, 27);
+            txtTextId2.TabIndex = 132;
+            // 
+            // btnConnect
+            // 
+            btnConnect.BackColor = Color.Transparent;
+            btnConnect.FlatStyle = FlatStyle.Popup;
+            btnConnect.Font = new Font("Segoe UI Emoji", 10.2F, FontStyle.Bold);
+            btnConnect.Location = new Point(1351, 892);
+            btnConnect.Name = "btnConnect";
+            btnConnect.Size = new Size(152, 36);
+            btnConnect.TabIndex = 133;
+            btnConnect.Text = "Connect";
+            btnConnect.UseVisualStyleBackColor = false;
+            btnConnect.Click += btnConnect_Click;
             // 
             // Plant_Management
             // 
@@ -536,6 +588,9 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1924, 992);
+            Controls.Add(btnConnect);
+            Controls.Add(txtTextId2);
+            Controls.Add(txtPlantId2);
             Controls.Add(btnRelations);
             Controls.Add(btnRefresh2);
             Controls.Add(btnRefresh);
@@ -583,6 +638,7 @@
             Controls.Add(txtPlantId);
             Controls.Add(dataGridView1);
             DoubleBuffered = true;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Plant_Management";
             Text = "Plant_Management";
             Load += Plant_Management_Load;
@@ -642,5 +698,8 @@
         private Button btnRefresh;
         private Button btnRefresh2;
         private Button btnRelations;
+        private TextBox txtPlantId2;
+        private TextBox txtTextId2;
+        private Button btnConnect;
     }
 }
